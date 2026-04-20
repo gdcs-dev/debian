@@ -1,0 +1,1213 @@
+Package: breakpad
+Version: 2024.02.16
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 42304
+Depends: libc6 (>= 2.34),libc6 (>= 2.38),libgcc-s1 (>= 3.0),libstdc++6 (>= 11),libstdc++6 (>= 13.1),libstdc++6 (>= 5.2),zlib1g (>= 1:1.1.4)
+Filename: pool/main/b/breakpad/breakpad_2024.02.16_arm64.deb
+Size: 10488004
+MD5sum: 06b4dad3a6d4f5157f7fe8e073bff3c9
+SHA1: eca9f384f8986e207f4bb3ca32c61c16336d1c68
+SHA256: f91d1000d5ff9a0f5d8c970e13334cfa30422931c9a14c142fc5edc0cb45f8f0
+Section: libs
+Priority: optional
+Description: Google Breakpad crash reporting system - runtime
+ Breakpad is a set of client and server components which implement a
+ crash-reporting system. The client libraries can be embedded in
+ applications to capture crash dumps when they crash, and the server
+ components process those crash dumps to produce stack traces and other
+ debugging information.
+ .
+ This package contains the runtime libraries and tools.
+
+Package: breakpad-wrapper
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 1548
+Depends: breakpad, libc6 (>= 2.36),libgcc-s1 (>= 3.0),libstdc++6 (>= 11)
+Filename: pool/main/b/breakpad-wrapper/breakpad-wrapper_1.0.0_arm64.deb
+Size: 507266
+MD5sum: f8f4838ce1d1389c49a6d4ef4fe0c65a
+SHA1: 48f1df7a7cdf9c4e549d085e4f218846ae15b601
+SHA256: b30509556fe2b5877320b10f76889263f987e76272f741a2f6d80b575e9f73a2
+Section: libs
+Priority: optional
+Description: RDK Breakpad wrapper library - runtime
+ A C++ wrapper library for Google Breakpad crash reporting system.
+ This wrapper simplifies the integration of Breakpad into RDK applications
+ by providing a simplified interface for exception handling and crash dump
+ generation.
+ .
+ This package contains the runtime library.
+
+Package: component-registry
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 40
+Depends: libc6 (>= 2.34),librdk-logger (>= 2.4.0),libxml2 (>= 2.7.4),rbus (>= 2.9.0)
+Filename: pool/main/c/component-registry/component-registry_1.0.0_arm64.deb
+Size: 10564
+MD5sum: 23762acd3a1b4a9cf3be8f570c6e287a
+SHA1: 8fdf0610da9f68e33e8d207f603347c1771631fa
+SHA256: 6f822867739ef0af281369ae56b7654bbb055c8295e0d9fe6756f1855692c659
+Section: misc
+Priority: optional
+Description: RDK Component Registry (CR)
+ The Component Registry is a central component in the RDK software stack
+ that manages component registration and provides component lookup services.
+ It uses RBUS for inter-component communication.
+
+Package: hermesfs
+Version: 0.0.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 864
+Depends: fuse3, libc6 (>= 2.39),libgcc-s1 (>= 4.2)
+Filename: pool/main/h/hermesfs/hermesfs_0.0.3_arm64.deb
+Size: 397340
+MD5sum: ef9dfef437274ebd10b6ec4bb0d385a7
+SHA1: 9e584d6d5fd234f90cb4fcb3e20c529c6dd96715
+SHA256: 3900a6566f5fc39eb3ddf30e84a180c83ec305c62ffb1dd4017c5cab2d83329d
+Section: misc
+Priority: optional
+Description: HermesFS is a Rust-based FUSE (Filesystem in Userspace) program that provides
+  efficient and flexible file system functionalities. This program is designed to abstract the
+  complexities of streaming data to the cloud, and giving application developers a simple file
+  based interface to write data. In embedded systems, you may have large development groups
+  working on various components throughout the system. Application developers may want to add the
+  ability to stream captures or other data from their application to the cloud for analysis.
+  The developers shouldn't need to worry about how to stream that data, this is where HermesFS makes
+  dreams come true. The application developers can simply write to a file, and the HermesFS
+  implementation will take care of the rest, ensuring that the data is streamed to the cloud as
+  intended by the platform maintainers. This allows the application developers to focus on their
+  core functionality, while the platform maintainers can ensure that the data is streamed correctly
+  and efficiently.
+ .
+ This package provides the binary for running HermesFS
+ on devices.
+
+Package: libbreakpad-dev
+Version: 2024.02.16
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 44656
+Depends: breakpad (= 2024.02.16)
+Filename: pool/main/l/libbreakpad-dev/libbreakpad-dev_2024.02.16_arm64.deb
+Size: 6401798
+MD5sum: a6c0618839455d5bf287840d33eeeb5e
+SHA1: 5771833487bdb1976e5fb8c6b3567b495a44ad5c
+SHA256: c32112e27cad64958a21b9e52e84ad6239466ec3ed320bed57e6e824c9df0ae9
+Section: libdevel
+Priority: optional
+Description: Google Breakpad crash reporting system - development files
+ Breakpad is a set of client and server components which implement a
+ crash-reporting system. The client libraries can be embedded in
+ applications to capture crash dumps when they crash.
+ .
+ This package contains the development headers, static libraries, and
+ pkg-config files needed to build applications using Breakpad.
+
+Package: libbreakpad-wrapper-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 20
+Depends: breakpad-wrapper (= 1.0.0)
+Filename: pool/main/l/libbreakpad-wrapper-dev/libbreakpad-wrapper-dev_1.0.0_arm64.deb
+Size: 4842
+MD5sum: 4fd86ab527b1b84388d1db96c7a5c33b
+SHA1: 9a7ba1db6f1ce641ad75661813c09dccaee0129c
+SHA256: cdf6fe5dc2e90779852a674541626b416bfa49a31ccfef50f17daba1b234b7ce
+Section: libdevel
+Priority: optional
+Description: RDK Breakpad wrapper library - development files
+ A C++ wrapper library for Google Breakpad crash reporting system.
+ This wrapper simplifies the integration of Breakpad into RDK applications.
+ .
+ This package contains the development headers and static libraries needed
+ to build applications using the breakpad wrapper library.
+
+Package: libccsp-common
+Version: 1.3.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 4024
+Depends: libc6 (>= 2.38),librdk-logger (>= 2.4.0),libsafec (>= 3.7.1),libssl3t64 (>= 3.0.0),libtrower-base64 (>= 1.2.7),rbus (>= 2.9.0)
+Filename: pool/main/l/libccsp-common/libccsp-common_1.3.0_arm64.deb
+Size: 859356
+MD5sum: ea6c417b9628a8e1ddb02c1c278d018b
+SHA1: 46fa809a3c2fe537751d5ff85852b70cc782a2db
+SHA256: 353759307370d9c5bac38157aa999f37b63ce284ca94f3b5e4b24abb64fb3449
+Section: misc
+Priority: optional
+Description: CCSP Common Library
+ RDK Central Common CCSP Component (Common Component Software Platform) library
+ providing core functionality for CCSP components including message bus integration,
+ debug API, utilities, and COSA (Component Object System Architecture) support.
+ .
+ This package contains the runtime libraries.
+
+Package: libccsp-common-dev
+Version: 1.3.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 9040
+Depends: libccsp-common (= 1.3.0)
+Filename: pool/main/l/libccsp-common-dev/libccsp-common-dev_1.3.0_arm64.deb
+Size: 518466
+MD5sum: 74deb35dce934eaf4a8d11e24770ae5a
+SHA1: 71d588cc700160e07a27b5bd5af24d92ee5051c6
+SHA256: de01773c1c0a92a850fbddcd61ad7e16778621d1a4e34c6cf15b707a545ecde5
+Section: libdevel
+Priority: optional
+Description: CCSP Common Library - development files
+ RDK Central Common CCSP Component library development files.
+ .
+ This package contains the development headers and static libraries.
+
+Package: libcimplog
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 24
+Depends: libc6 (>= 2.17),librdk-logger (>= 2.4.0)
+Filename: pool/main/l/libcimplog/libcimplog_1.0.0_arm64.deb
+Size: 4422
+MD5sum: abaf31cc8462f524802022f10451631d
+SHA1: 0bea5afcd09fbf0ba3a25ec7314f9c9191da94ba
+SHA256: de355006970be072de7cf2dd6dfcba7158e79d8204ae9d7050f933071bcdba86
+Section: libs
+Priority: optional
+Description: Simple logging library - runtime
+ cimplog is a simple logging library designed to work with RDK Logger.
+ It provides a lightweight abstraction for logging functionality with
+ support for different logging backends including generic logging,
+ RDK logger integration, and onboarding logging features.
+ .
+ This package contains the runtime library.
+
+Package: libcimplog-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 16
+Depends: libcimplog (= 1.0.0)
+Filename: pool/main/l/libcimplog-dev/libcimplog-dev_1.0.0_arm64.deb
+Size: 3974
+MD5sum: c921b64fbafad349df04602d8883fa05
+SHA1: e5829c8c4b85efb81c244443381665deb57c64f9
+SHA256: 9c1b60fd2c26c8f64f4ef602f4d1357f14a179172fc461245c2453c1dacc5334
+Section: libdevel
+Priority: optional
+Description: Simple logging library - development files
+ cimplog is a simple logging library designed to work with RDK Logger.
+ It provides a lightweight abstraction for logging functionality with
+ support for different logging backends.
+ .
+ This package contains headers and development files.
+
+Package: libcjwt
+Version: 2.3.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 48
+Depends: libc6 (>= 2.17),libcjson1 (>= 1.7.5),libssl3t64 (>= 3.0.0),libtrower-base64 (>= 1.2.7)
+Filename: pool/main/l/libcjwt/libcjwt_2.3.0_arm64.deb
+Size: 15206
+MD5sum: c8f8546fc5211e35646c4a51058fe47d
+SHA1: 95777152b7facabc50afffe13bed650a5a646ff6
+SHA256: b079f0ed16e6c84fb138c5923894cc47217eb8629d38a45455c77b3b1e3e4abc
+Section: libs
+Priority: optional
+Description: C JWT implementation - runtime
+ cjwt is a small JWT handler designed to allow consumers of JWTs of the
+ JWS variant the ability to securely and easily get claims and data from
+ a JWT. This particular JWT implementation uses cJSON and supports multiple
+ different crypto libraries.
+ .
+ It provides secure JWT validation, claim extraction, and JWT creation
+ capabilities with support for various signing algorithms.
+ .
+ This package contains the runtime library.
+
+Package: libcjwt-dev
+Version: 2.3.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 52
+Depends: libcjwt (= 2.3.0)
+Filename: pool/main/l/libcjwt-dev/libcjwt-dev_2.3.0_arm64.deb
+Size: 15922
+MD5sum: af21b2a10be05dee67ca09abbf1b8f9c
+SHA1: 2538344d98a7318e4628596c873a12f3f4fa58ac
+SHA256: 20594d7bf33e64ecc895c7d9fdd065de4b70f4bfec7cb7c6989ddda9925d3767
+Section: libdevel
+Priority: optional
+Description: C JWT implementation - development files
+ cjwt is a small JWT handler designed to allow consumers of JWTs of the
+ JWS variant the ability to securely and easily get claims and data from
+ a JWT.
+ .
+ This package contains headers and development files.
+
+Package: libcpeabs
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 64
+Depends: libc6 (>= 2.17),libcimplog (>= 1.0.0),rbus (>= 2.9.0)
+Filename: pool/main/l/libcpeabs/libcpeabs_1.0.0_arm64.deb
+Size: 20464
+MD5sum: e254d4f6ae1ced7f37ec01e854e563d0
+SHA1: 2949384cf8e53f674850cc96b897e6c50363429f
+SHA256: 782eadbde19ba24f3a85fa1c4bf5edd829d5269db6c9cf4f2faaf560a6af8703
+Section: misc
+Priority: optional
+Description: Abstraction layer for consumer preference equipment systems
+ An abstraction layer for consumer preference equipment systems.
+ Part of the XMiDT project for device management.
+
+Package: libcpeabs-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 88
+Depends: libcpeabs (= 1.0.0)
+Filename: pool/main/l/libcpeabs-dev/libcpeabs-dev_1.0.0_arm64.deb
+Size: 22292
+MD5sum: 132ecf96be38a920bc3c4ed0d5c77c94
+SHA1: 9ee89dd5ceda252b1094045aafb9b0ca16e14264
+SHA256: a0eb855a7118354512e2b5b7f681504e172123b47d3afa72b5d61eb3c014c82f
+Section: misc
+Priority: optional
+Description: Development files for cpeabs
+ Development files (headers and static library) for the cpeabs
+ abstraction layer library.
+
+Package: liblinenoise
+Version: 1.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 88
+Depends: libc6 (>= 2.17)
+Filename: pool/main/l/liblinenoise/liblinenoise_1.0_arm64.deb
+Size: 29356
+MD5sum: 6b137d51d9ecf7dc54da320c724b378f
+SHA1: b94b2569564725fc28c4e50f3b9b84346407114c
+SHA256: bf2e354fee8c51e30222053e7f4998001368428dc442f710280116a93e6eb6e1
+Section: misc
+Priority: optional
+Description: Minimal line editing library
+ A minimal, zero-config, BSD licensed, readline replacement.
+ Linenoise is a line editing library used to provide readline-like
+ functionality to command line applications with minimal dependencies.
+
+Package: libnanomsg
+Version: 1.2.2
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 300
+Depends: libc6 (>= 2.34)
+Filename: pool/main/l/libnanomsg/libnanomsg_1.2.2_arm64.deb
+Size: 94300
+MD5sum: 4d3d3f9ab5f412c75de15a91da3ce3c2
+SHA1: 4f0148cb0d15f6c58736d4c324104180af63a9f4
+SHA256: c115013f0c0947acb3bf9cee445e27f75e723c59bfcae3c7b562e2b07ed26b63
+Section: libs
+Priority: optional
+Description: High-performance implementation of scalability protocols - runtime
+ nanomsg is a socket library that provides several common communication
+ patterns. It aims to make the networking layer fast, scalable, and easy
+ to use. Implemented in C, it works on a wide range of operating systems
+ with no further dependencies.
+ .
+ The library provides implementation of several scalability protocols:
+ PAIR, BUS, REQREP, PUBSUB, PIPELINE, and SURVEY. These protocols can
+ run over various transports such as TCP, IPC, and inproc (in-process).
+ .
+ This package contains the runtime library.
+
+Package: libnanomsg-dev
+Version: 1.2.2
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 80
+Depends: libnanomsg (= 1.2.2)
+Filename: pool/main/l/libnanomsg-dev/libnanomsg-dev_1.2.2_arm64.deb
+Size: 8534
+MD5sum: 989ec6e3f254e894c40c804db72ec89b
+SHA1: cdca175f6721b1c05d2759be0b8e5cad59e04867
+SHA256: 834c8f2034570b989d180bae49927cfeca444b7964739c109ebb5015e48dec5c
+Section: libdevel
+Priority: optional
+Description: High-performance implementation of scalability protocols - development
+ nanomsg is a socket library that provides several common communication
+ patterns. It aims to make the networking layer fast, scalable, and easy
+ to use.
+ .
+ This package contains headers and development files.
+
+Package: libnopoll
+Version: 1.0.4
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 180
+Depends: libc6 (>= 2.34),libssl3t64 (>= 3.0.0)
+Filename: pool/main/l/libnopoll/libnopoll_1.0.4_arm64.deb
+Size: 44768
+MD5sum: 4139da7e3ce03e2bbf50039988551050
+SHA1: 563bb6b40cbcecb13ead3e7f77ab99b58b167467
+SHA256: 1efb90b309b827b6fda48bedf71f92560747ff6e8ffa465cdece4abad3afe74b
+Section: libs
+Priority: optional
+Description: WebSocket library - runtime
+ noPoll is a OpenSource WebSocket implementation (RFC 6455), written in
+ ANSI C, that allows building pure WebSocket solutions or to provide
+ WebSocket support to existing TCP oriented applications. It provides
+ both client and server API.
+ .
+ This package contains the runtime library.
+
+Package: libnopoll-dev
+Version: 1.0.4
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 388
+Depends: libnopoll (= 1.0.4)
+Filename: pool/main/l/libnopoll-dev/libnopoll-dev_1.0.4_arm64.deb
+Size: 62510
+MD5sum: 309b3f770bf0634388f42f31d3e766c4
+SHA1: f06c5169ce7d1583fb35d8b9c293f4a196a91b2f
+SHA256: dbc154cdbaf1393ede0258d8f05f84ed2cea20615934ba203e9cb565ac74ee27
+Section: libdevel
+Priority: optional
+Description: WebSocket library - development files
+ noPoll is a OpenSource WebSocket implementation (RFC 6455), written in
+ ANSI C, that allows building pure WebSocket solutions or to provide
+ WebSocket support to existing TCP oriented applications. It provides
+ both client and server API.
+ .
+ This package contains headers and development files.
+
+Package: libquickjs-dev
+Version: 2025-12-03
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 8256
+Depends: quickjs (= 2025-12-03)
+Filename: pool/main/l/libquickjs-dev/libquickjs-dev_2025-12-03_arm64.deb
+Size: 2059330
+MD5sum: 1559ade7d5e77cd58d618605a9e7499f
+SHA1: 265c102e76ba26985c1ecd84e635e552d96a0225
+SHA256: 916f0987ca91eff92e6956f7ab75226519737b954f415bceec3af3a621d2da35
+Section: libdevel
+Priority: optional
+Description: Development files for QuickJS
+ This package contains the header files and static library needed to
+ develop applications that use the QuickJS engine.
+
+Package: librbus-dev
+Version: 2.9.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 276
+Depends: rbus (= 2.9.0)
+Filename: pool/main/l/librbus-dev/librbus-dev_2.9.0_arm64.deb
+Size: 36480
+MD5sum: 658ca8f51133f24c18f03a7d0eacda99
+SHA1: bc2deb3362b9e548b2a5eeaa2b33b58850f95a7e
+SHA256: 49ee21e676de23deb7036d6ba55e40f27dda83cf4c1c9a3489ef1513442cac77
+Section: libdevel
+Priority: optional
+Description: RDK Bus messaging system - development files
+ RDK Bus (RBus) is a lightweight, fast and efficient bus messaging system.
+ It allows interprocess communication (IPC) and remote procedure call (RPC)
+ between multiple process running on a hardware device.
+ .
+ This package contains the development headers and static libraries.
+
+Package: librdk-logger
+Version: 2.4.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 112
+Depends: libc6 (>= 2.17),libc6 (>= 2.34),liblog4c3t64 (>= 1.2.1)
+Filename: pool/main/l/librdk-logger/librdk-logger_2.4.0_arm64.deb
+Size: 20094
+MD5sum: 195ba80b1d0acd600999506f1f0b4e62
+SHA1: 7c15b62c5a7eebda884a2cb71d0801b48b2c23c2
+SHA256: ea41ffe21b40d16a7e567ff4285fa0f9a752195ce852ade9b403f3f8dbdfae6b
+Section: libs
+Priority: optional
+Description: RDK Logger - Runtime library
+ RDK Logger is a general-purpose logging mechanism for RDK components.
+ It supports multiple log levels and modules, with log levels configured
+ via a configuration file (debug.ini). Each module can have its own log
+ level, and these can be changed at runtime using the provided CLI utility.
+ .
+ This package contains the runtime library and configuration files.
+
+Package: librdk-logger-dev
+Version: 2.4.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 92
+Depends: librdk-logger (= 2.4.0)
+Filename: pool/main/l/librdk-logger-dev/librdk-logger-dev_2.4.0_arm64.deb
+Size: 17310
+MD5sum: 41290f0e582fb1c9ffbff2c837230c09
+SHA1: 3e64371d604c56ca40ca6295ad782d07db0fc41b
+SHA256: 391c7e0e9df5f31a3200c0dcd401a444866da5ab3a974d336c8350349d7acdc5
+Section: libdevel
+Priority: optional
+Description: RDK Logger - Development files
+ RDK Logger is a general-purpose logging mechanism for RDK components.
+ .
+ This package contains the development headers and static libraries.
+
+Package: libsafec
+Version: 3.7.1
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 180
+Depends: libc6 (>= 2.38)
+Filename: pool/main/l/libsafec/libsafec_3.7.1_arm64.deb
+Size: 36290
+MD5sum: fc1d9a3cb2aceb4a017b582de86b385b
+SHA1: 8511eaf5594c7238a08677e20f3382375f7f77e5
+SHA256: b9c6fdea2e2884d4e5cec79dc8f65092fbebc2ecc22406e064db577ad78b24f3
+Section: misc
+Priority: optional
+Description: Safe C Library
+ The Safe C Library provides secure string and memory functions to
+ prevent buffer overflows and other security vulnerabilities.
+
+Package: libsafec-dev
+Version: 3.7.1
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 444
+Depends: libsafec (= 3.7.1)
+Filename: pool/main/l/libsafec-dev/libsafec-dev_3.7.1_arm64.deb
+Size: 44478
+MD5sum: 73318803f81315859d484c5777fa31c9
+SHA1: 5219fd9698a267db44c1c2b2c2ba9074beb9229e
+SHA256: 45e6ef50794981d06ec295fb31ad3c85a9adf6d5879493aede9e18fe5f7a9a63
+Section: libdevel
+Priority: optional
+Description: Safe C Library - development files
+ The Safe C Library provides secure string and memory functions to
+ prevent buffer overflows and other security vulnerabilities.
+ .
+ This package contains the header files and static library.
+
+Package: libsyswrapper
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 72
+Depends: libc6 (>= 2.38),librdk-logger (>= 2.4.0)
+Filename: pool/main/l/libsyswrapper/libsyswrapper_1.0.0_arm64.deb
+Size: 26262
+MD5sum: c83fd56a3f7b7b81f0f4d1415e640582
+SHA1: a6ad182b392740e6ba64d67e504c47fe3f66bbf9
+SHA256: 3bd94dba5489257e0b214b72ed842236660e2078e32dce691f80e3d360cec6e6
+Section: misc
+Priority: optional
+Description: Secure wrapper for system calls
+ Secure wrapper library for system calls with privilege management support.
+ Part of the RDK (Reference Design Kit) framework.
+
+Package: libsyswrapper-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 100
+Depends: libsyswrapper (= 1.0.0)
+Filename: pool/main/l/libsyswrapper-dev/libsyswrapper-dev_1.0.0_arm64.deb
+Size: 29176
+MD5sum: 68714d24017f22f29295e206cd903d5c
+SHA1: 223c9d7de4f9ba771006e42facbe761b6ada6e64
+SHA256: d738d1c73e05d6e025d792623ba13df6fcea923577d483f7fefe6b9facdcfc44
+Section: misc
+Priority: optional
+Description: Development files for libSyscallWrapper
+ Development files (headers) for the secure system call wrapper library.
+
+Package: libtrower-base64
+Version: 1.2.7
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 80
+Depends: libc6 (>= 2.38)
+Filename: pool/main/l/libtrower-base64/libtrower-base64_1.2.7_arm64.deb
+Size: 13000
+MD5sum: 16bd29026bebcffe06d1dd0c75de84a8
+SHA1: 119c9d6f783d06b93fb359a63a91b16fc4c9f0c3
+SHA256: 0e4457d8000137ced226629cfd8bbc78f8d8ce3e51c42192a0c7fd1aa0e1df32
+Section: misc
+Priority: optional
+Description: Base64 encode/decode library
+ C implementation of base64 encode/decode.
+ .
+ This package contains the runtime library.
+
+Package: libtrower-base64-dev
+Version: 1.2.7
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 12
+Depends: libtrower-base64 (= 1.2.7)
+Filename: pool/main/l/libtrower-base64-dev/libtrower-base64-dev_1.2.7_arm64.deb
+Size: 2234
+MD5sum: 0486e438b5cec0d89ec3513f53961298
+SHA1: d07e8ae389061212d94216a02ecf0e353e0560f1
+SHA256: bcb2fd551b085fad412db105db650dcd78e5c3cfa7922e0ecc0d6e1e410d2ec3
+Section: libdevel
+Priority: optional
+Description: Base64 encode/decode library - development files
+ C implementation of base64 encode/decode.
+ .
+ This package contains the development headers and static libraries.
+
+Package: libubox
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 868
+Depends: libc6 (>= 2.17),libc6 (>= 2.33),libc6 (>= 2.34),libjson-c5 (>= 0.15)
+Filename: pool/main/l/libubox/libubox_1.0.0_arm64.deb
+Size: 260274
+MD5sum: 2a8c00498ffa25dbbae966bcdcd5f83f
+SHA1: fa999ba89d079e8dc7a94da2d3b8b7a0df14de37
+SHA256: 032158beb4978c482b92824d2d40b9f8c3610df690b0b01e55149f0e8734de8c
+Section: libs
+Priority: optional
+Description: OpenWrt utility library
+ Libubox is a utility library used by OpenWrt. It provides various data
+ structures (AVL tree, linked lists, blob format, key-value lists) and
+ utilities (event loop, socket helpers, base64 encoding, MD5 hashing,
+ logging) commonly used in OpenWrt.
+ .
+ This package contains the shared libraries: libubox, libblobmsg_json,
+ and libjson_script.
+
+Package: libubox-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 3492
+Depends: libubox (= 1.0.0)
+Filename: pool/main/l/libubox-dev/libubox-dev_1.0.0_arm64.deb
+Size: 452736
+MD5sum: bd1c1909eb4fe80c00259895a5ddbe49
+SHA1: dc8ffa31e35249e544468eb9c75b8f2a0b53bd3c
+SHA256: 870a8957ad170814bd7f9ce693ad32e722d201023410bf31248e30953d830461
+Section: libdevel
+Priority: optional
+Description: Development files for libubox
+ Libubox is a utility library used by OpenWrt. It provides various data
+ structures (AVL tree, linked lists, blob format, key-value lists) and
+ utilities (event loop, socket helpers, base64 encoding, MD5 hashing,
+ logging) commonly used in OpenWrt.
+ .
+ This package contains the development files (headers, static libraries,
+ and symlinks) for libubox.
+
+Package: libubus-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 24
+Depends: ubus (= 1.0.0)
+Filename: pool/main/l/libubus-dev/libubus-dev_1.0.0_arm64.deb
+Size: 4634
+MD5sum: 0d15de0f6f984a7bce782312d82309cd
+SHA1: df75da6e87f1f5ac8ce6462e114781f743043962
+SHA256: b49e563057fb96c22565e6072f9e771b0a014973c4114024db042378e07df7de
+Section: libs
+Priority: optional
+Description: OpenWrt RPC client library
+ Ubus is the OpenWrt micro bus architecture for inter-process communication
+ (IPC). It provides a system-wide message bus that allows different
+ processes to communicate with each other using a simple API.
+ .
+ This package contains the libubus shared library.
+
+Package: libuci-dev
+Version: 2025.01.05
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 40
+Depends: uci (= 2025.01.05)
+Filename: pool/main/l/libuci-dev/libuci-dev_2025.01.05_arm64.deb
+Size: 8056
+MD5sum: 746e131fb5d1748e62b761221d957ffa
+SHA1: b1716a999cff6277117c96c5dc532e742e14091b
+SHA256: 63112aa94148894bf6f08ddcaffcf39ee41b5710bf149c9341ec89a0ecbc4244
+Section: libdevel
+Priority: optional
+Description: OpenWrt Unified Configuration Interface - development files
+ UCI is a small C library for parsing and manipulating configuration
+ files in the UCI format.
+ .
+ This package contains the development headers and static libraries.
+
+Package: libucode-quickjs-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 68
+Depends: ucode-quickjs (= 1.0.0)
+Filename: pool/main/l/libucode-quickjs-dev/libucode-quickjs-dev_1.0.0_arm64.deb
+Size: 13650
+MD5sum: ba59f40b21f34d37b354586b0d990e52
+SHA1: c1369af3a44a7cdff0c3bfd853dea6e0d63b8632
+SHA256: 476f9da60146f14581e3234de236b5227a3b8d7ebdba31aa99660c1b110e2e7a
+Section: libdevel
+Priority: optional
+Description: ucode JavaScript interpreter - development files
+ ucode is a JavaScript-like scripting language with a QuickJS backend.
+ .
+ This package contains the development headers and libraries needed
+ to build applications using ucode.
+
+Package: libwdmp-c
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 40
+Depends: libc6 (>= 2.17),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5)
+Filename: pool/main/l/libwdmp-c/libwdmp-c_1.0.0_arm64.deb
+Size: 11148
+MD5sum: 87af9359c4227f43a0efd62ff916b761
+SHA1: a65d801afcbebe26d6c7b7d142e98fb12e073211
+SHA256: 15b0085b7983688d3a86140b6177c3b16acac2b0659a968658d1c00c12ccc853
+Section: misc
+Priority: optional
+Description: WebPA Data Model Parser library
+ C implementation of the WebPA Data Model Parser library.
+ Part of the XMiDT project for device management.
+
+Package: libwdmp-c-dev
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 60
+Depends: libwdmp-c (= 1.0.0)
+Filename: pool/main/l/libwdmp-c-dev/libwdmp-c-dev_1.0.0_arm64.deb
+Size: 13592
+MD5sum: 1869da203a7af46b81cbc7ac2946748f
+SHA1: 3620cd41f4e318f322385234064575806cb5daad
+SHA256: db34f7937502d89aa2495b11f69d3c55a9d213bc6e7baa5242cd5b1cb23e6b0c
+Section: misc
+Priority: optional
+Description: Development files for wdmp-c
+ Development files (headers and static library) for the WebPA
+ Data Model Parser library.
+
+Package: libwebconfig-framework
+Version: 1.1.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 164
+Depends: libc6 (>= 2.34),libccsp-common (>= 1.3.0),rbus (>= 2.9.0)
+Filename: pool/main/l/libwebconfig-framework/libwebconfig-framework_1.1.0_arm64.deb
+Size: 30444
+MD5sum: f18ed762622b26495386f277b8f555d7
+SHA1: 85844a238dfb21b44c3245722e5995608cfdc787
+SHA256: 845c19959cd5b14becc013c718babc4f2d35dde0d3cfab20c1b980ad84e35157
+Section: misc
+Priority: optional
+Description: WebConfig framework library for RDK components
+ Independent library that can be linked by other RDK components to
+ register and receive the blob of information from webconfig.
+
+Package: libwebconfig-framework-dev
+Version: 1.1.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 352
+Depends: libwebconfig-framework (= 1.1.0)
+Filename: pool/main/l/libwebconfig-framework-dev/libwebconfig-framework-dev_1.1.0_arm64.deb
+Size: 43520
+MD5sum: 1e3351df629537a63f5b1e094103f3f0
+SHA1: f54e96bfd708ec97cd80166077ab40a1ac87e32c
+SHA256: d0fba35fac7c65a932576fe072a965ce679f142c92e08afb41c18d5f704651de
+Section: misc
+Priority: optional
+Description: Development files for WebConfig framework
+ Development files (headers) for the WebConfig framework library.
+
+Package: libwrp-c
+Version: 1.1.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 100
+Depends: libc6 (>= 2.17),libcimplog (>= 1.0.0),libmsgpackc2 (>= 2.1.0),libtrower-base64 (>= 1.2.7)
+Filename: pool/main/l/libwrp-c/libwrp-c_1.1.3_arm64.deb
+Size: 37676
+MD5sum: 4d589ee6f36653fa0bff10d9035e7868
+SHA1: 00cd3f1fd121c2c71f4fd7e34c4ee7778f337f18
+SHA256: 2d49f62b87746787c9706e6069a9121884031ec8bfa190fbd6a36017355a1b90
+Section: libs
+Priority: optional
+Description: C implementation of Web Routing Protocol - runtime
+ wrp-c is a C implementation of the Web Routing Protocol. It provides
+ a simple library that converts between C structures and msgpack encoded
+ structures, with helper functions for working with WRP messages.
+ .
+ The library handles serialization and deserialization of WRP protocol
+ messages used in the Xmidt ecosystem for device communication and
+ management.
+ .
+ This package contains the runtime library.
+
+Package: libwrp-c-dev
+Version: 1.1.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 160
+Depends: libwrp-c (= 1.1.3)
+Filename: pool/main/l/libwrp-c-dev/libwrp-c-dev_1.1.3_arm64.deb
+Size: 42992
+MD5sum: 40a38ef281f5865fb6e08a3959889772
+SHA1: 65b92a2882daf150b266579e94750c2f5b7a7e48
+SHA256: 7b62b340dbea3fb2261dd93627202b0139c28f5c704f2040d6ba2cbba1347852
+Section: libdevel
+Priority: optional
+Description: C implementation of Web Routing Protocol - development files
+ wrp-c is a C implementation of the Web Routing Protocol. It provides
+ a simple library for working with WRP messages.
+ .
+ This package contains headers and development files.
+
+Package: parodus
+Version: 2.10.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 164
+Depends: libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libcjwt (>= 2.3.0),libcurl4t64 (>= 7.16.2),libnanomsg (>= 1.2.2),libnopoll (>= 1.0.4),librdk-logger (>= 2.4.0),libuuid1 (>= 2.16),libwrp-c (>= 1.1.3),rbus (>= 2.9.0)
+Filename: pool/main/p/parodus/parodus_2.10.0_arm64.deb
+Size: 59066
+MD5sum: e8ee1b24b2a51ac85cff38c08bbe6387
+SHA1: 2266714f42789db32bdc3f12587df540a438b49e
+SHA256: e3e1a209037364257a066cff8e5c99cb7c5ac4b6baf9bebdafef5fb2ca8a9bef
+Section: misc
+Priority: optional
+Description: XMiDT client coordinator
+ parodus is a C implementation of the XMiDT client coordinator. XMiDT
+ is a highly scalable, highly available, generic message routing system.
+ .
+ parodus acts as a client-side agent that connects devices to the XMiDT
+ cloud infrastructure, handling WebSocket connections, message routing,
+ and protocol translation between devices and cloud services.
+ .
+ This package contains the parodus daemon and utilities.
+
+Package: quickjs
+Version: 2025-12-03
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 6404
+Depends: libc6 (>= 2.38)
+Filename: pool/main/q/quickjs/quickjs_2025-12-03_arm64.deb
+Size: 2004638
+MD5sum: debf8ee44b2264250d7296f4bf783dc7
+SHA1: f5303f23a03b197a83ac5f0a3fffced4979af75d
+SHA256: 25e6b11f1698528a809a32d170f2868246985db1d8ae477f053a68ad04410d74
+Section: interpreters
+Priority: optional
+Description: Small and embeddable JavaScript engine
+ QuickJS is a small and embeddable JavaScript engine. It supports
+ the ES2020 specification including modules, asynchronous generators,
+ proxies and BigInt.
+ .
+ It includes:
+  - A command line interpreter (qjs)
+  - A compiler (qjsc)
+  - Support for ES2020 modules
+ .
+ It is designed to be small and fast while supporting most of the
+ JavaScript language features.
+
+Package: rbus
+Version: 2.9.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 668
+Depends: libc6 (>= 2.34),libc6 (>= 2.38),libcjson1 (>= 1.7.5),liblinenoise (>= 1.0),libmsgpackc2 (>= 2.1.0)
+Filename: pool/main/r/rbus/rbus_2.9.0_arm64.deb
+Size: 185664
+MD5sum: b7859b015d6e67e854e8d7e6626d2e8b
+SHA1: 6f2a1dfdc2153416094bdbb7df8848301018a022
+SHA256: ba8c2e7fd33eb231c25129b069341d88284f3e48479de4f9fbadcdd25ce43ad5
+Section: libs
+Priority: optional
+Description: RDK Bus messaging system - runtime
+ RDK Bus (RBus) is a lightweight, fast and efficient bus messaging system.
+ It allows interprocess communication (IPC) and remote procedure call (RPC)
+ between multiple process running on a hardware device. It supports the
+ creation and use of a data model, which is a hierarchical tree of named
+ objects with properties, events, and methods.
+ .
+ This package contains the runtime libraries and binaries.
+
+Package: rbus-elements
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 604
+Depends: libc6 (>= 2.34),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),rbus (>= 2.9.0)
+Filename: pool/main/r/rbus-elements/rbus-elements_1.0.0_arm64.deb
+Size: 39820
+MD5sum: 433150fd517f93c3845e01488db8ccef
+SHA1: ae808c9230623e229fa404752d2af1e2c2efb9e5
+SHA256: 991231c3f6166772c85501da4a69d46b240164d9f822521d0ccd68dd077f7c9f
+Section: misc
+Priority: optional
+Description: RBus Elements Provider
+ Lightweight helper service that registers RBUS data model elements,
+ tables, events and methods from a JSON description plus a small set
+ of built-in DeviceInfo properties.
+ .
+ This package contains the rbus_elements binary and configuration.
+
+Package: safec-common-wrapper
+Version: 1.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 8
+Filename: pool/main/s/safec-common-wrapper/safec-common-wrapper_1.0_arm64.deb
+Size: 2286
+MD5sum: eb236210d382988ab5f5cededf80c7d7
+SHA1: a5830a240cd1e67662fa79798b504a165b997192
+SHA256: 1062cfd0b18c8fe1974a01f150479818e0e3782bbc4e7685be49d0f857cfed74
+Section: misc
+Priority: optional
+Description: SafeC wrapper definition header
+ A safec wrapper definition header file providing macros and
+ compatibility layer for SafeC library functions.
+ .
+ This is a header-only package that provides compatibility macros
+ for safe string and memory operations.
+
+Package: service-gateway
+Version: 0.1.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 5492
+Depends: libc6 (>= 2.34),libgcc-s1 (>= 4.2)
+Filename: pool/main/s/service-gateway/service-gateway_0.1.0_arm64.deb
+Size: 1565296
+MD5sum: 8fd434bf88bb49cc777b8b65b01b66d6
+SHA1: 19c7becd7adc02c1301d8354ed811af09f0865ce
+SHA256: a9febc661397984af383d16727099f50a0e82df0c9fd23002c5ea2f9a2828afb
+Section: misc
+Priority: optional
+Description: Service Gateway daemon
+ sgwd is the central daemon for the service-gateway IPC framework.
+ It acts as a message broker, allowing services and clients on the
+ same host or across hosts on the same LAN to discover and call
+ each other by name, without hard-coded addresses or ports.
+ .
+ Services register by name and version; clients resolve services
+ by name, version, capabilities, and preferred capabilities. All
+ communication uses MessagePack over Unix domain sockets locally,
+ and TCP between peer daemons.
+
+Package: service-sdk
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 636
+Depends: libc6 (>= 2.38),libgcc-s1 (>= 3.0),libstdc++6 (>= 13.1)
+Filename: pool/main/s/service-sdk/service-sdk_1.0.0_arm64.deb
+Size: 129420
+MD5sum: 43cae6b3175589a0055f14eaebbd4c9c
+SHA1: fa87423e5963c82acb438988d52a42329dae7385
+SHA256: 7a540fe8ba657faf45a450de0035d301ef98916bbd1e80a51b46ffba8d751cd2
+Section: misc
+Priority: optional
+Description: Service SDK core library
+ Core library for the Service SDK framework providing a unified API
+ for service communication across multiple backend transports.
+ Install backend packages separately (service-sdk-backend-*) to enable
+ specific communication protocols.
+
+Package: service-sdk-backend-dbus
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 120
+Depends: service-sdk (= 1.0.0), libc6 (>= 2.32),libgcc-s1 (>= 3.0),libstdc++6 (>= 13.1),libsystemd0 (>= 243),service-sdk (>= 1.0.0)
+Filename: pool/main/s/service-sdk-backend-dbus/service-sdk-backend-dbus_1.0.0_arm64.deb
+Size: 30562
+MD5sum: 3261a4d033ea3565c0b3141cf5d083f0
+SHA1: e80b2897ac1e4783171fdcae8f850be5ca966d97
+SHA256: f3bd2b697ee8fee78853e6d78bc2e2f914f9f5a8c5f789e8abfc7f3f06de31ee
+Section: misc
+Priority: optional
+Description: Service SDK DBus backend
+ DBus communication backend for the Service SDK library.
+ This backend enables service communication over the DBus
+ message bus system.
+
+Package: service-sdk-backend-rbus
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 104
+Depends: service-sdk (= 1.0.0), rbus, libc6 (>= 2.32),libgcc-s1 (>= 3.0),libstdc++6 (>= 11),rbus (>= 2.9.0),service-sdk (>= 1.0.0)
+Filename: pool/main/s/service-sdk-backend-rbus/service-sdk-backend-rbus_1.0.0_arm64.deb
+Size: 26394
+MD5sum: 688cd2fd8ead619f39f2b6d59ac48db5
+SHA1: 0ce6b1032540317e62e9ac8850b70eaaff99a6ee
+SHA256: 35eea4a9b306c2a1d68c0ec115f0d3b41fa2eb22165d9a37e3c9b73cefe000ba
+Section: misc
+Priority: optional
+Description: Service SDK RBus backend
+ RBus communication backend for the Service SDK library.
+ This backend enables service communication over the RDK Bus (RBus)
+ messaging system.
+
+Package: service-sdk-backend-ubus
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 152
+Depends: service-sdk (= 1.0.0), ubus, libubox, libc6 (>= 2.32),libgcc-s1 (>= 3.0),libstdc++6 (>= 13.1),libubox (>= 1.0.0),service-sdk (>= 1.0.0),ubus (>= 1.0.0)
+Filename: pool/main/s/service-sdk-backend-ubus/service-sdk-backend-ubus_1.0.0_arm64.deb
+Size: 37186
+MD5sum: 85c0ce42b91c0d83a3605d0aa2c619c7
+SHA1: 30220de8888d35b5a6a80e16b19304bd71771900
+SHA256: 1a7615694cb2607b147a0aeac9b8d2c220a1e96dd69bb8c4c4b41504b06512a8
+Section: misc
+Priority: optional
+Description: Service SDK Ubus backend
+ Ubus communication backend for the Service SDK library.
+ This backend enables service communication over the OpenWrt
+ micro bus architecture (ubus).
+
+Package: service-sdk-backend-usp
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 1364
+Depends: service-sdk (= 1.0.0), libc6 (>= 2.38),libgcc-s1 (>= 3.0),libprotobuf32t64 (>= 3.21.12),libstdc++6 (>= 13.1),service-sdk (>= 1.0.0)
+Filename: pool/main/s/service-sdk-backend-usp/service-sdk-backend-usp_1.0.0_arm64.deb
+Size: 244652
+MD5sum: 72b013964b99e1895923260c3d506799
+SHA1: c22da9aa710a3ef605aef391a76b74751cfdc16f
+SHA256: 0b6913f9355e686c520fc45c19d9d983998922ddb58e4f3b5872b540e959cf8b
+Section: misc
+Priority: optional
+Description: Service SDK USP backend
+ USP (Unix Domain Socket) communication backend for the Service SDK library.
+ This backend enables service communication over Unix Domain Sockets.
+
+Package: service-sdk-backend-websocket
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 292
+Depends: service-sdk (= 1.0.0), libc6 (>= 2.38),libgcc-s1 (>= 3.0),libnopoll (>= 1.0.4),libstdc++6 (>= 13.1),service-sdk (>= 1.0.0)
+Filename: pool/main/s/service-sdk-backend-websocket/service-sdk-backend-websocket_1.0.0_arm64.deb
+Size: 74284
+MD5sum: f365da6c2b4ddc3fe6a775eb64b18840
+SHA1: 258a7f0ca8135fdda9e35e6212bd537cf6ec1278
+SHA256: a040d1da79b677dfb5e7e8201b778df709bdd83bce461e725b35eaadb3ef85ed
+Section: misc
+Priority: optional
+Description: Service SDK WebSocket backend
+ WebSocket communication backend for the Service SDK library.
+ This backend enables service communication over WebSocket
+ connections.
+
+Package: telemetry
+Version: 1.7.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 1320
+Depends: psmisc, libc6 (>= 2.17),libc6 (>= 2.34),libcjson1 (>= 1.7.5),libcurl4t64 (>= 7.16.2),libcurl4t64 (>= 7.63.0),libglib2.0-0t64 (>= 2.12.0),libmsgpackc2 (>= 2.1.0),librdk-logger (>= 2.4.0),libwebconfig-framework (>= 1.1.0),rbus (>= 2.9.0)
+Filename: pool/main/t/telemetry/telemetry_1.7.3_arm64.deb
+Size: 387380
+MD5sum: 3ea1603d21fdb09f4e286a538483bb17
+SHA1: d866b9105a0d6a4a6a1fbaa7e2ad36b284388203
+SHA256: f7e86829775b0fec5586fde4da43c63430022d88bc4cd4aaccc674597f229b8f
+Section: misc
+Priority: optional
+Description: RDK Telemetry 2.0 framework
+ Telemetry 2.0 is a framework for collecting and reporting device metrics
+ and diagnostics data. Part of the RDK (Reference Design Kit) framework.
+
+Package: telemetry-dev
+Version: 1.7.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 320
+Depends: telemetry (= 1.7.3)
+Filename: pool/main/t/telemetry-dev/telemetry-dev_1.7.3_arm64.deb
+Size: 68186
+MD5sum: 2afb334dbc47a1e05c9ec71ca9daf358
+SHA1: 372d4247ff833d811f4591994876679348b7bf8a
+SHA256: ee1124ae2bd3d5fc5dd83317a4c6b61aa3b2ad9f38a27a50b56bdeb2f32e9eb8
+Section: misc
+Priority: optional
+Description: Development files for Telemetry 2.0
+ Development files (headers) for the Telemetry 2.0 framework.
+
+Package: ubus
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 744
+Depends: libc6 (>= 2.17),libc6 (>= 2.34),libc6 (>= 2.38),libubox (>= 1.0.0)
+Filename: pool/main/u/ubus/ubus_1.0.0_arm64.deb
+Size: 228028
+MD5sum: 33c778db6ddcdd5bc821932267b28ae6
+SHA1: e70435ad28dd1a78c900150c226c09a27599f090
+SHA256: f9091b46b066b062044037e960fe0c56dde6f2c6b74e6e0ff43d4658f74d38c7
+Section: misc
+Priority: optional
+Description: OpenWrt RPC daemon and CLI
+ Ubus is the OpenWrt micro bus architecture for inter-process communication
+ (IPC). It provides a system-wide message bus that allows different
+ processes to communicate with each other using a simple API.
+ .
+ This package contains the ubusd daemon and the ubus command-line tool.
+
+Package: uci
+Version: 2025.01.05
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 392
+Depends: libc6 (>= 2.34),libc6 (>= 2.38),libubox (>= 1.0.0)
+Filename: pool/main/u/uci/uci_2025.01.05_arm64.deb
+Size: 134180
+MD5sum: 96e57d27f15fd0af3c908818334ba68b
+SHA1: 19a30731c42a82265d0c50cb25a522fe86fc3811
+SHA256: 0f19f4f45e319aa645a348fc25514d8159858c58ed55d61022c38a42e5f1d6e0
+Section: utils
+Priority: optional
+Description: OpenWrt Unified Configuration Interface - runtime
+ UCI is a small C library for parsing and manipulating configuration
+ files in the UCI format. The UCI format is used by OpenWrt for its
+ configuration files. It provides a simple, text-based configuration
+ system with a hierarchical structure.
+ .
+ This package contains the runtime library and command-line utility.
+
+Package: ucode-quickjs
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 2120
+Depends: quickjs, libc6 (>= 2.34),libcurl4t64 (>= 7.16.2),libmsgpackc2 (>= 2.1.0),libnanomsg (>= 1.2.2),libssl3t64 (>= 3.0.0),libubox (>= 1.0.0),libyaml-0-2,rbus (>= 2.9.0),utopia (>= 1.4.0),zlib1g (>= 1:1.1.4)
+Filename: pool/main/u/ucode-quickjs/ucode-quickjs_1.0.0_arm64.deb
+Size: 417466
+MD5sum: f4067fba0e56a15c3a0b180aad4a1cd9
+SHA1: f0dea02b91340960b9dfabeabe69cc681fe4a5c8
+SHA256: 284e2cfebef9b7a79cc6f867019100c1f53e45af9188ec5b3f076cf535566128
+Section: interpreters
+Priority: optional
+Description: ucode JavaScript interpreter with QuickJS backend
+ ucode is a JavaScript-like scripting language with a QuickJS backend.
+ This package provides the ucode interpreter and runtime libraries.
+ .
+ This package contains the runtime components.
+
+Package: utopia
+Version: 1.4.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 180
+Depends: libc6 (>= 2.17),libc6 (>= 2.34),libccsp-common (>= 1.3.0),libsafec (>= 3.7.1),telemetry (>= 1.7.3)
+Filename: pool/main/u/utopia/utopia_1.4.0_arm64.deb
+Size: 35816
+MD5sum: 8040fd8de757a3af45976e0ec31e8a45
+SHA1: dc903e04efa57f381f74375c22fe3ceb1e8b2582
+SHA256: a81bd1beabadb78da65ae09add9568d0d27b0501da5eb22a0593642a791ee68c
+Section: misc
+Priority: optional
+Description: RDK-B Utopia service framework
+ Utopia is a service framework for RDK-B providing network configuration,
+ system event management, and various network services including DHCP,
+ IPv6, firewall, and routing services.
+
+Package: utopia-dev
+Version: 1.4.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 24
+Depends: utopia (= 1.4.0)
+Filename: pool/main/u/utopia-dev/utopia-dev_1.4.0_arm64.deb
+Size: 3530
+MD5sum: 6efb301873e7eeef3fc15ea6bdb15be1
+SHA1: 78aadec78aa6eba8c7e18f785aeb887d3228b278
+SHA256: bf60d0129d24382f4a04c85a264d64d90f51c5dcaa4c52c4158197fca2af8a5b
+Section: libdevel
+Priority: optional
+Description: Development files for Utopia
+ Development files (headers and libraries) for the Utopia service framework.
+
+Package: webcfg
+Version: 0.0.1
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 632
+Depends: libc6 (>= 2.38),libcjson1 (>= 1.7.5),libcpeabs (>= 1.0.0),libcurl4t64 (>= 7.16.2),libmsgpackc2 (>= 2.1.0),libtrower-base64 (>= 1.2.7),libuuid1 (>= 2.16),libwdmp-c (>= 1.0.0),libwrp-c (>= 1.1.3),rbus (>= 2.9.0)
+Filename: pool/main/w/webcfg/webcfg_0.0.1_arm64.deb
+Size: 233780
+MD5sum: 7528c1d7e4a46e024f0615b634c53015
+SHA1: 74b9ea0bd98d58beb54202fbab9a0f51607f7893
+SHA256: 80bd3bede14230c4fbc58c10fad30786ccfc303ec51eb6d03a43b5a9853c32e6
+Section: misc
+Priority: optional
+Description: Webconfig client implementation
+ webcfg is the client implementation of webconfig for XMiDT.
+ It provides configuration management capabilities for RDK devices.
+
+Package: xmidt-agent-rs
+Version: 0.2.1
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 5840
+Depends: libc6 (>= 2.34),libgcc-s1 (>= 4.2)
+Filename: pool/main/x/xmidt-agent-rs/xmidt-agent-rs_0.2.1_arm64.deb
+Size: 2371908
+MD5sum: 93be7ec7401f80e58d58aaf8a761f0a0
+SHA1: 7a21454530ff80673071f3c09a3062d2c6024339
+SHA256: 9e2fb850c1b8deeb86c98e667085e5ca7468ecc0d5660dc4bc1ec990e1f0e5a6
+Section: misc
+Priority: optional
+Description: An xMiDT agent implementation in Rust
+ xmidt-agent-rs is a Rust implementation of an xMiDT agent that
+ connects to the XMiDT cloud infrastructure for device management
+ and communication.
+ .
+ This package provides the xmidt-agent-rs binary for running
+ the agent on devices.
+
+Package: xmidt-rbus
+Version: 1.0.0
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 2912
+Depends: rbus, libc6 (>= 2.34),libgcc-s1 (>= 4.2)
+Filename: pool/main/x/xmidt-rbus/xmidt-rbus_1.0.0_arm64.deb
+Size: 1138304
+MD5sum: 8b82f35753e6c48ed6b5064d809e7a59
+SHA1: 137d2dde6580f6a9e542f9c7045ec0f37af1d738
+SHA256: 0c1ee5b760990850203a87d30587f07989689b204841d6c538352c5886089dba
+Section: libs
+Priority: optional
+Description: xMiDT RBus integration library - runtime
+ xmidt-rbus provides integration between the xMiDT cloud
+ infrastructure and the RDK Bus (RBus) messaging system,
+ enabling device management and communication over RBus.
+ .
+ This package contains the runtime library.
+

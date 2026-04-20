@@ -1,0 +1,23 @@
+Origin: RDK/XMiDT Packages
+Label: RDK/XMiDT Packages
+Suite: stable
+Codename: stable
+Architectures: amd64 arm64
+Components: main
+Description: RDK and XMiDT component packages
+Date: Thu, 12 Mar 2026 15:36:59 +0000
+MD5Sum:
+ 92ea17c69d459af98a9934e5d66ccb1e            13338 main/binary-arm64/Packages.gz
+ 315b298145f376e943ac758551030f13            47256 main/binary-arm64/Packages
+ 5f68716b95f934ada1fcc83004313322            13346 main/binary-amd64/Packages.gz
+ 4d0e605f9898f1280498c785a6792a4d            47278 main/binary-amd64/Packages
+SHA1:
+ 8b2cce940f3a86cc86cb137748064a8a81fec684            13338 main/binary-arm64/Packages.gz
+ b1cccc0818ea58c08dc1a0b3eb2f3d419f042b4b            47256 main/binary-arm64/Packages
+ cb1e716a74644c2ff0fdfe2b7473e700b0b8d4c0            13346 main/binary-amd64/Packages.gz
+ e873b442af8db8a970e65f1f0e63ac62caa852e0            47278 main/binary-amd64/Packages
+SHA256:
+ 8437c85ae754c0f76473c1278a887cc2f53e54761d54c687e0efa169701cfd52            13338 main/binary-arm64/Packages.gz
+ 911e65eefa3e6df453bdfcc3f80b55ca24e429ea16870f3095ae4664eef471e1            47256 main/binary-arm64/Packages
+ 77a965b4dbc1b1f621ad2449b2d953fd2dd90b78fa2cfe46d3f53e8b71af24bd            13346 main/binary-amd64/Packages.gz
+ 3ff432ed7925106caaf0f6fac8f581552d67f62afef0c7c8e84eba2ad4c4808d            47278 main/binary-amd64/Packages
