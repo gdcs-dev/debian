@@ -2,22 +2,22 @@ Origin: RDK/XMiDT Packages
 Label: RDK/XMiDT Packages
 Suite: stable
 Codename: stable
-Architectures: amd64 arm64
+Architectures: arm64 amd64
 Components: main
 Description: RDK and XMiDT component packages
-Date: Thu, 12 Mar 2026 15:36:59 +0000
+Date: Thu, 06 Aug 2026 18:57:33 +0000
 MD5Sum:
- 92ea17c69d459af98a9934e5d66ccb1e            13338 main/binary-arm64/Packages.gz
- 315b298145f376e943ac758551030f13            47256 main/binary-arm64/Packages
- 5f68716b95f934ada1fcc83004313322            13346 main/binary-amd64/Packages.gz
- 4d0e605f9898f1280498c785a6792a4d            47278 main/binary-amd64/Packages
+ a35ead92ed7d01baf07366d463f684f2            14033 main/binary-arm64/Packages.gz
+ 911ebd73f491c5976f46aecc561c6600            50025 main/binary-arm64/Packages
+ 6473d12ff16ace8ffb874ee7539da290            14042 main/binary-amd64/Packages.gz
+ b289c2bd1575fe5573602e7f133d6c04            50047 main/binary-amd64/Packages
 SHA1:
- 8b2cce940f3a86cc86cb137748064a8a81fec684            13338 main/binary-arm64/Packages.gz
- b1cccc0818ea58c08dc1a0b3eb2f3d419f042b4b            47256 main/binary-arm64/Packages
- cb1e716a74644c2ff0fdfe2b7473e700b0b8d4c0            13346 main/binary-amd64/Packages.gz
- e873b442af8db8a970e65f1f0e63ac62caa852e0            47278 main/binary-amd64/Packages
+ 1a330d90209b538fca7cd2f2256f49f703ab5971            14033 main/binary-arm64/Packages.gz
+ f043d3dcbda8c262dbd14a52a2000c991ce63c01            50025 main/binary-arm64/Packages
+ 98a4c7519b860f332376785a907adeed655970ae            14042 main/binary-amd64/Packages.gz
+ 68f5dc6df1900dc08f672721c10a7a08d4a6b1fb            50047 main/binary-amd64/Packages
 SHA256:
- 8437c85ae754c0f76473c1278a887cc2f53e54761d54c687e0efa169701cfd52            13338 main/binary-arm64/Packages.gz
- 911e65eefa3e6df453bdfcc3f80b55ca24e429ea16870f3095ae4664eef471e1            47256 main/binary-arm64/Packages
- 77a965b4dbc1b1f621ad2449b2d953fd2dd90b78fa2cfe46d3f53e8b71af24bd            13346 main/binary-amd64/Packages.gz
- 3ff432ed7925106caaf0f6fac8f581552d67f62afef0c7c8e84eba2ad4c4808d            47278 main/binary-amd64/Packages
+ 55b440ffd559f6a3b2ec1356af8f05b32f2d46478edf3cc2c036b9b529ba9d7f            14033 main/binary-arm64/Packages.gz
+ a09e90271649f165582e7ef111875cd7a6921ec94d2b901bb14249814a5660d9            50025 main/binary-arm64/Packages
+ d37964c97677cc08a645f5a4ed56c8b457edac4c7dc5f414548f689c5e63b3f0            14042 main/binary-amd64/Packages.gz
+ 528c9e8f4dc3e85572292013540ce16885dcd9217db3d28ccd7f718bcd8f52fb            50047 main/binary-amd64/Packages

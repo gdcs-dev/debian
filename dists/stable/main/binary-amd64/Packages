@@ -391,6 +391,49 @@ Description: WebSocket library - development files
  .
  This package contains headers and development files.
 
+Package: libparodus
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 32
+Depends: libc6 (>= 2.34),libnanomsg (>= 1.2.2),libwrp-c (>= 1.1.3)
+Filename: pool/main/l/libparodus/libparodus_1.0.0_amd64.deb
+Size: 9860
+MD5sum: 08b4bc890ac0f146660c535eddb3baaa
+SHA1: 7f11613d96e09a0d3134a4a8907960499a8fee30
+SHA256: 7d7f50063c3dad0dc4b3cd71581478c54f4c876e16bc18f06bef4b322fdbd8b0
+Section: libs
+Priority: optional
+Description: C implementation of the Parodus adapter - runtime
+ libparodus is a C implementation of the Parodus client adapter library.
+ It provides a simple API for services to communicate with the Parodus
+ WebPA daemon using nanomsg sockets and the WRP protocol.
+ .
+ The library handles connection management, message serialization and
+ deserialization, and supports sending and receiving WRP-encoded messages
+ to and from the Parodus router.
+ .
+ This package contains the runtime library.
+
+Package: libparodus-dev
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 40
+Depends: libparodus (= 1.0.0)
+Filename: pool/main/l/libparodus-dev/libparodus-dev_1.0.0_amd64.deb
+Size: 10208
+MD5sum: bb1fc61951f559f263a1bc1052e35951
+SHA1: 1325a6b42851d900bdf394213cbe1c92347217a1
+SHA256: 6ec7745761dc641c5efafc45a52644a939f94987e16a4cb04b07e03adfe73c93
+Section: libdevel
+Priority: optional
+Description: C implementation of the Parodus adapter - development files
+ libparodus is a C implementation of the Parodus client adapter library.
+ It provides a simple API for services to communicate with Parodus.
+ .
+ This package contains headers and development files.
+
 Package: libquickjs-dev
 Version: 2025-12-03
 Architecture: amd64
@@ -807,6 +850,29 @@ Description: XMiDT client coordinator
  .
  This package contains the parodus daemon and utilities.
 
+Package: parodus2rbus
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 112
+Depends: libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),libssl3t64 (>= 3.0.0),libuuid1 (>= 2.16),libwrp-c (>= 1.1.3),rbus (>= 2.9.0)
+Filename: pool/main/p/parodus2rbus/parodus2rbus_1.0.0_amd64.deb
+Size: 42398
+MD5sum: 5869a7ee56504c3efeb59eadae590042
+SHA1: b3cb668b64ca14912757e34cad7cfbf02d690807
+SHA256: 3b2bbe47a32cba7a2d5886fc0090b52532f76104899535d2f80ab600eb629f26
+Section: misc
+Priority: optional
+Description: Lightweight bridge translating Parodus-style JSON requests to RBUS
+ parodus2rbus is a lightweight bridge that translates simple Parodus-style
+ JSON requests into RBUS get/set operations. It supports Parodus transport
+ via libparodus and handles WRP message types including REQ, RETRIEVE (CRUD
+ read), and EVENT operations.
+ .
+ The application acts as a bridge between the Parodus WebPA protocol and
+ the RBus messaging system, enabling communication between web-based
+ configuration interfaces and device management systems.
+
 Package: quickjs
 Version: 2025-12-03
 Architecture: amd64
@@ -840,10 +906,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 656
 Depends: libc6 (>= 2.34),libc6 (>= 2.38),libcjson1 (>= 1.7.5),liblinenoise (>= 1.0),libmsgpackc2 (>= 2.1.0)
 Filename: pool/main/r/rbus/rbus_2.9.0_amd64.deb
-Size: 192662
-MD5sum: ae6141c37922bd4efce389cd2fd068e1
-SHA1: 4f4acba4287ebc384194b374b8c00105aa63648a
-SHA256: 0ad790bb680c8d32bc3647534b140138131863a1d02fb70d4f8ec28fa5b2adb7
+Size: 192674
+MD5sum: 2473f0fdd609f46c7d81bff585cab0e2
+SHA1: f97d969ddbacf6ffe55b499e932ecb15a2d485d7
+SHA256: 22a084b43c98ecd72718ab0ecd01053baa09612331080191dd4662c5f16e19cb
 Section: libs
 Priority: optional
 Description: RDK Bus messaging system - runtime
@@ -863,9 +929,9 @@ Installed-Size: 596
 Depends: libc6 (>= 2.34),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),rbus (>= 2.9.0)
 Filename: pool/main/r/rbus-elements/rbus-elements_1.0.0_amd64.deb
 Size: 38768
-MD5sum: 1744831ded5afc976067d9bd5b1c5516
-SHA1: 893fbe9553ad7a6e26486ea24ceb28bd034286ae
-SHA256: a964abc50f71d55649f6f72e01280263d83e948609fb5ce7ce76a45cb65c3016
+MD5sum: fd3ffc8c79e1620eecae1e4c93032bd4
+SHA1: 517a46c9b903f43800a2b4854754545167d759ed
+SHA256: 9b74b4ff8cacdac9e47cf0b787165b158ef6c40a636f47df219555490d93e85a
 Section: misc
 Priority: optional
 Description: RBus Elements Provider
@@ -1107,10 +1173,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 2116
 Depends: quickjs, libc6 (>= 2.34),libcurl4t64 (>= 7.16.2),libmsgpackc2 (>= 2.1.0),libnanomsg (>= 1.2.2),libssl3t64 (>= 3.0.0),libubox (>= 1.0.0),libyaml-0-2,rbus (>= 2.9.0),utopia (>= 1.4.0),zlib1g (>= 1:1.1.4)
 Filename: pool/main/u/ucode-quickjs/ucode-quickjs_1.0.0_amd64.deb
-Size: 416248
-MD5sum: a728d37e9e9f2099a27bda8a910e7fd6
-SHA1: 6ca8644d6d1af7d0e41d64986fb9531d83d602c3
-SHA256: 03d9ed09d0c1e961b914d35a26e9393fdb784b07e88c89f3084bd60d965574d7
+Size: 416238
+MD5sum: b6197d6fa9858ccb453a07a030cdc084
+SHA1: f9447eb7ec0a8a3dd720c35925ec159e10dc1538
+SHA256: fee514daa3dfb20629d75d71d548da5220ffe570e3dba6576a1f69816db43f36
 Section: interpreters
 Priority: optional
 Description: ucode JavaScript interpreter with QuickJS backend
@@ -1126,10 +1192,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 184
 Depends: libc6 (>= 2.14),libc6 (>= 2.34),libc6 (>= 2.4),libc6 (>= 2.7),libccsp-common (>= 1.3.0),libsafec (>= 3.7.1),telemetry (>= 1.7.3)
 Filename: pool/main/u/utopia/utopia_1.4.0_amd64.deb
-Size: 35654
-MD5sum: c6d3885fa7af55af56f529c528d9cbac
-SHA1: 1660ce5ac7538c7d2ed6fa96b51771d696e74f58
-SHA256: 0cb13dea405792709525f0d2b9ae651fc63a2e43cd1e9cb2622dd44158ec33c1
+Size: 35620
+MD5sum: 739ce1020858e3762c112077c01ffbb7
+SHA1: 65ae7348518b36f73e9624bb767c17ef772d1182
+SHA256: 350bf28fd17931da2c21aac1f950e341e700e33157a724e0ec910c73868e4d69
 Section: misc
 Priority: optional
 Description: RDK-B Utopia service framework
@@ -1144,10 +1210,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 24
 Depends: utopia (= 1.4.0)
 Filename: pool/main/u/utopia-dev/utopia-dev_1.4.0_amd64.deb
-Size: 3528
-MD5sum: dc3257e10af1b122f4dd9fefd8feb0ad
-SHA1: dd23da8b9fce78b5b75c9c545e982fc43100d677
-SHA256: 1642fee960a95710784b08f55bf0835080bf9ee25c3f0bd571ed588ba09c5f83
+Size: 3532
+MD5sum: 58046130b23dd8665f5792fae02898fb
+SHA1: 6eeca73a726c78dc7f7a788b664cb074b9e0a1b8
+SHA256: 1d9e7f4323ab255d7ac9443a417367cb54fb4b027dfc123fa79257b6b40eb806
 Section: libdevel
 Priority: optional
 Description: Development files for Utopia
