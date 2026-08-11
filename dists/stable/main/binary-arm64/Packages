@@ -851,16 +851,16 @@ Description: XMiDT client coordinator
  This package contains the parodus daemon and utilities.
 
 Package: parodus2rbus
-Version: 1.0.0
+Version: 1.0.1
 Architecture: arm64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 108
-Depends: libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),libssl3t64 (>= 3.0.0),libuuid1 (>= 2.16),libwrp-c (>= 1.1.3),rbus (>= 2.9.0)
-Filename: pool/main/p/parodus2rbus/parodus2rbus_1.0.0_arm64.deb
-Size: 42284
-MD5sum: 12736739e5ea32b2d166d34064cf1141
-SHA1: ce956e66db9ab1347f01773b88aeb17713959cff
-SHA256: 18ebd145015e951e30d0d449b941a057c31cca4ebf4adaec9725b67e4f8d175b
+Depends: libparodus (>= 1.0.0), libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),libssl3t64 (>= 3.0.0),libuuid1 (>= 2.16),libwrp-c (>= 1.1.3),rbus (>= 2.9.0)
+Filename: pool/main/p/parodus2rbus/parodus2rbus_1.0.1_arm64.deb
+Size: 42400
+MD5sum: 5fbbeac5ca4d3e14f6e7334ad2b11cb7
+SHA1: d3fda90ece3c533e490be482fe303758d8c5c8cd
+SHA256: 96632c5db5f75ec0819bd1523acddc58c29231873dc44b8d9e7dca111ed3cda8
 Section: misc
 Priority: optional
 Description: Lightweight bridge translating Parodus-style JSON requests to RBUS
