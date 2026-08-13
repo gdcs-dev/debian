@@ -5,10 +5,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 28
 Depends: libwrp-c, libparodus, libnanomsg, rbus, libcimplog, libparodus,libwrp-c,rbus
 Filename: pool/main/a/apparmor-simulator/apparmor-simulator_1.0.0_amd64.deb
-Size: 7532
-MD5sum: 7e6e96568a2376ebf7e3b0582844de99
-SHA1: c8c1d3505b78fa0aba78949a029aeb429f1162b9
-SHA256: e0870afac1973378cdc42e2e96750c29f1bc60c2cdbfea67db5c30a45bf0ccf4
+Size: 7620
+MD5sum: 36bc00591f47c4beaf0e99ca4fa97b06
+SHA1: a0bbdeff013375b866a75429f012f50197eec6f9
+SHA256: e740a907ecca6c32c631cefbcf90edb50e1a5d68271f7474dc7fbb0080b122b7
 Section: misc
 Priority: optional
 Description: Synthetic AppArmor event emitter for the vCPE gateway container
