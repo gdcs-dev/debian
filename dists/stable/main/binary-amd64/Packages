@@ -1,3 +1,25 @@
+Package: apparmor-simulator
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 28
+Depends: libwrp-c, libparodus, libnanomsg, rbus, libcimplog, libparodus,libwrp-c,rbus
+Filename: pool/main/a/apparmor-simulator/apparmor-simulator_1.0.0_amd64.deb
+Size: 7532
+MD5sum: 7e6e96568a2376ebf7e3b0582844de99
+SHA1: c8c1d3505b78fa0aba78949a029aeb429f1162b9
+SHA256: e0870afac1973378cdc42e2e96750c29f1bc60c2cdbfea67db5c30a45bf0ccf4
+Section: misc
+Priority: optional
+Description: Synthetic AppArmor event emitter for the vCPE gateway container
+ apparmor-simulator registers with parodus via libparodus and emits
+ WRP_MSG_TYPE__EVENT messages containing synthetic AppArmor audit events
+ on a configurable timer (APPARMOR_SIM_INTERVAL_SEC). It also registers
+ an RBUS method (Device.AppArmor.SimulateEvent()) for on-demand emission.
+ .
+ This package contains the apparmor-simulator daemon and its systemd
+ service unit.
+
 Package: breakpad
 Version: 2024.02.16
 Architecture: amd64
