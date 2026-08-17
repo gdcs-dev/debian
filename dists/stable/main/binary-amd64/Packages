@@ -2,13 +2,13 @@ Package: apparmor-simulator
 Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
-Installed-Size: 28
+Installed-Size: 32
 Depends: libwrp-c, libparodus, libnanomsg, rbus, libcimplog, libparodus,libwrp-c,rbus
 Filename: pool/main/a/apparmor-simulator/apparmor-simulator_1.0.0_amd64.deb
-Size: 7620
-MD5sum: 36bc00591f47c4beaf0e99ca4fa97b06
-SHA1: a0bbdeff013375b866a75429f012f50197eec6f9
-SHA256: e740a907ecca6c32c631cefbcf90edb50e1a5d68271f7474dc7fbb0080b122b7
+Size: 9568
+MD5sum: 70ee7ff1aa6dc350c552bb8898c4aa18
+SHA1: 7f5a4afb6b183234810b3b1a79c4595fd651a4f3
+SHA256: 0f01878f90761ada9a300eb0971c7b121ae20827caed98cd807edd4ef7e08403
 Section: misc
 Priority: optional
 Description: Synthetic AppArmor event emitter for the vCPE gateway container
@@ -85,13 +85,13 @@ Package: hermesfs
 Version: 0.0.3
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
-Installed-Size: 956
+Installed-Size: 948
 Depends: fuse3, libc6 (>= 2.39),libgcc-s1 (>= 4.2)
 Filename: pool/main/h/hermesfs/hermesfs_0.0.3_amd64.deb
-Size: 397510
-MD5sum: c7824b106e544d1b2e571cece51441aa
-SHA1: df2d7aef6a4cee3dcbf8c0afdcb7d21ff45bc4d7
-SHA256: b6be2738a0cfd1df38575049adddd45bfd0671871bfafe779dfe775f3e9dae34
+Size: 397082
+MD5sum: f0318aa5435473cf5fe5c9efb79aaf79
+SHA1: aaf03dcba48b3b1b2c34bc07fe946746318ed36f
+SHA256: c4c296779749a72d4a98f978badfb22e190a6b245ffbf687fb25775609945687
 Section: misc
 Priority: optional
 Description: HermesFS is a Rust-based FUSE (Filesystem in Userspace) program that provides
