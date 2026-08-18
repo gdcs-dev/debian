@@ -853,13 +853,13 @@ Package: parodus
 Version: 2.10.0
 Architecture: arm64
 Maintainer: Package Workflows <packages@example.com>
-Installed-Size: 164
-Depends: libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libcjwt (>= 2.3.0),libcurl4t64 (>= 7.16.2),libnanomsg (>= 1.2.2),libnopoll (>= 1.0.4),librdk-logger (>= 2.4.0),libuuid1 (>= 2.16),libwrp-c (>= 1.1.3),rbus (>= 2.9.0)
+Installed-Size: 168
+Depends: libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libcjwt (>= 2.3.0),libcurl4t64 (>= 7.16.2),libnanomsg (>= 1.2.2),libnopoll (>= 1.0.4),librdk-logger (>= 2.4.0),libuuid1 (>= 2.16),rbus (>= 2.9.0),wrp-c (>= 1.1.3)
 Filename: pool/main/p/parodus/parodus_2.10.0_arm64.deb
-Size: 59066
-MD5sum: e8ee1b24b2a51ac85cff38c08bbe6387
-SHA1: 2266714f42789db32bdc3f12587df540a438b49e
-SHA256: e3e1a209037364257a066cff8e5c99cb7c5ac4b6baf9bebdafef5fb2ca8a9bef
+Size: 59894
+MD5sum: 8405a17b47c976daf91adcd12659381b
+SHA1: 037a94c8eeec7b35fb4fa9cf5072147dd1f1da40
+SHA256: 855fcf38c2d60461e4afe9d52b38e6075e03958cef75a8c9b990773b0fc3aea5
 Section: misc
 Priority: optional
 Description: XMiDT client coordinator
@@ -1257,6 +1257,49 @@ Priority: optional
 Description: Webconfig client implementation
  webcfg is the client implementation of webconfig for XMiDT.
  It provides configuration management capabilities for RDK devices.
+
+Package: wrp-c
+Version: 1.1.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 100
+Depends: libc6 (>= 2.17),libcimplog (>= 1.0.0),libmsgpackc2 (>= 2.1.0),libtrower-base64 (>= 1.2.7)
+Filename: pool/main/w/wrp-c/wrp-c_1.1.3_arm64.deb
+Size: 37682
+MD5sum: a45d4169fb5a672f891f9a0657ca39cf
+SHA1: 1991ef54411d1ea40431336816772953fef491fb
+SHA256: 732b50e982429201223bb372c7e9148f83d90e8f5c5dcefce28c80bf24e09175
+Section: libs
+Priority: optional
+Description: C implementation of Web Routing Protocol - runtime
+ wrp-c is a C implementation of the Web Routing Protocol. It provides
+ a simple library that converts between C structures and msgpack encoded
+ structures, with helper functions for working with WRP messages.
+ .
+ The library handles serialization and deserialization of WRP protocol
+ messages used in the Xmidt ecosystem for device communication and
+ management.
+ .
+ This package contains the runtime library.
+
+Package: wrp-c-dev
+Version: 1.1.3
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 160
+Depends: wrp-c (= 1.1.3)
+Filename: pool/main/w/wrp-c-dev/wrp-c-dev_1.1.3_arm64.deb
+Size: 42958
+MD5sum: 9e5036e584968a8441695498bc4e5eea
+SHA1: 130f7b0739dd69550bbb788873f06588eabd8347
+SHA256: 7f5784c6e9fedb0e87cc80f41e40495f29aa0390bc283772454b1b8b988a0d97
+Section: libdevel
+Priority: optional
+Description: C implementation of Web Routing Protocol - development files
+ wrp-c is a C implementation of the Web Routing Protocol. It provides
+ a simple library for working with WRP messages.
+ .
+ This package contains headers and development files.
 
 Package: xmidt-agent-rs
 Version: 0.2.1
