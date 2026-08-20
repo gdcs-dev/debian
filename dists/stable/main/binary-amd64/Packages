@@ -3,12 +3,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 32
-Depends: libparodus, rbus, libparodus,rbus,wrp-c
+Depends: libparodus, rbus, libc6 (>= 2.34),libcjson1 (>= 1.7.13),rbus (>= 2.9.0),wrp-c (>= 1.1.3)
 Filename: pool/main/a/apparmor-simulator/apparmor-simulator_1.0.0_amd64.deb
-Size: 9550
-MD5sum: b0b7d7a096d6205343353e3079d2ed52
-SHA1: 515f746de329ab47c6c70f52e8ee0749461e4d0f
-SHA256: 6ccb8cff3aff512230f1874190d63abba8be4f94a6bb9762e84f3d8d55ca7b76
+Size: 9590
+MD5sum: 569f87edf152131291689b78a9a623be
+SHA1: 817a3c99ad2b2127d1a5c03c6f22d4795cc7dd88
+SHA256: 0f02e6cd67671fc2ded45ecd9070c78a8192ac67b1aaeae5500b79c98e726f50
 Section: misc
 Priority: optional
 Description: Synthetic AppArmor event emitter for the vCPE gateway container
@@ -27,10 +27,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 9940
 Depends: libc6 (>= 2.34),libc6 (>= 2.38),libgcc-s1 (>= 3.0),libstdc++6 (>= 11),libstdc++6 (>= 13.1),zlib1g (>= 1:1.1.4)
 Filename: pool/main/b/breakpad/breakpad_2024.02.16_amd64.deb
-Size: 1313778
-MD5sum: 13ce8ed30741e09ed90b1aa4e813e35d
-SHA1: 4acc06910d8a90dbb5ea7c2c7fa45ef4ef900903
-SHA256: fc18ca74cd5a36e255cdd91b6680401375683f0c6033b88bca83c78dcae5f7b3
+Size: 1313740
+MD5sum: 0356b6f9f2e964f12d85fd9746dd105c
+SHA1: 67a90bbdbe56bf180ffb6658bbc34297b59bb80d
+SHA256: bcfd861e6a28b09caadab60b108dea45a1720718af58e1bd37d156308e9f2825
 Section: libs
 Priority: optional
 Description: Google Breakpad crash reporting system - runtime
@@ -49,10 +49,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 28
 Depends: breakpad, libc6 (>= 2.14),libgcc-s1 (>= 3.0),libstdc++6 (>= 5.2)
 Filename: pool/main/b/breakpad-wrapper/breakpad-wrapper_1.0.0_amd64.deb
-Size: 5074
-MD5sum: f80c2f18c851bbfb0c65e37992352ce1
-SHA1: ce8fabb3823a6dc9e4fe593a578bd2daaf411db2
-SHA256: 90d265615b610519c7f36dc8da137a6761e5b397c8cf4d2d1c7d96d762ae3963
+Size: 5058
+MD5sum: d7ceff7b707a145a68c96a2808b0ce12
+SHA1: 31af1b6b65ce27f9af3f551c04d5f436f8fa697b
+SHA256: e7f70b11c1f12a74128e4448932d20e612f58c0cd49857b678d2a9ecaacefc48
 Section: libs
 Priority: optional
 Description: RDK Breakpad wrapper library - runtime
@@ -68,12 +68,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 44
-Depends: rbus
+Depends: libc6 (>= 2.34),librdk-logger (>= 2.4.0),libxml2 (>= 2.7.4),rbus (>= 2.9.0)
 Filename: pool/main/c/component-registry/component-registry_1.0.0_amd64.deb
-Size: 11002
-MD5sum: bd6680a0de8c3118fdcf745249ff65da
-SHA1: 26744780092d57edb24c983e81098866abd37e74
-SHA256: deb99ac2906721d90eb1e19b6be907eb93834e17986e4d0cf00d0cb5a74f9c65
+Size: 11048
+MD5sum: b976f1e58e2925ac1de65e41881b3fc8
+SHA1: 88c617620aa5d8e6828b10f87eefe9ad04a0fbe7
+SHA256: e64fbeb2d6e726be47e70f6e83e4f9c11f7b70930dcbb2c972216a10603f9261
 Section: misc
 Priority: optional
 Description: RDK Component Registry (CR)
@@ -88,10 +88,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 948
 Depends: fuse3, libc6 (>= 2.39),libgcc-s1 (>= 4.2)
 Filename: pool/main/h/hermesfs/hermesfs_0.0.3_amd64.deb
-Size: 397064
-MD5sum: eb7172a359df57d347e9df79b0ae6c41
-SHA1: 17774101dc75f685e3abb922895a5bfdc98be3eb
-SHA256: b5b8cea275f542e93feeb60e3252feee980cddef5438f45a2becbef8fdd4e929
+Size: 397078
+MD5sum: 59c40ae887f57829382bbbfe2bab1178
+SHA1: ce5a2219d9f2a8934d275c45b2c37d0fd1ae8dc2
+SHA256: 3c10741d526ee52ba08e32ea82dec7675ff410f88c1456ea0e20c1e00830b843
 Section: misc
 Priority: optional
 Description: HermesFS is a Rust-based FUSE (Filesystem in Userspace) program that provides
@@ -117,10 +117,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 12628
 Depends: breakpad (= 2024.02.16)
 Filename: pool/main/l/libbreakpad-dev/libbreakpad-dev_2024.02.16_amd64.deb
-Size: 1070370
-MD5sum: f13c2be43b00cf264c14c68a66a68590
-SHA1: 913838c1bd8427387a53d2113a32bba819127cdb
-SHA256: 7da96506301461ec6cff34a8c25a9e9bbe8c6f2bcb42fed5bfef51609f2a22b4
+Size: 1070612
+MD5sum: c6b50528114f01baf1d7a019625e81e2
+SHA1: 757eecd9533643e0e74089b764c91ee87f750c4c
+SHA256: bf4015f168a0760d0e863b2243042060a7a8a897587a3ba5e3ed6fc0b3293f87
 Section: libdevel
 Priority: optional
 Description: Google Breakpad crash reporting system - development files
@@ -138,10 +138,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 20
 Depends: breakpad-wrapper (= 1.0.0)
 Filename: pool/main/l/libbreakpad-wrapper-dev/libbreakpad-wrapper-dev_1.0.0_amd64.deb
-Size: 4700
-MD5sum: 4e4c1269223adc04276343ad13a7cad8
-SHA1: 1cf7bed328590a8290fe1e26f1be21f69517eab5
-SHA256: d4a90180924aace704f5d5027767e7f2d94d3b83276163c880f3cd2b529583ab
+Size: 4702
+MD5sum: d159e9cb4c9b1fe5836b0ea5e919a1e0
+SHA1: 2ba8f3b080af6dc8ed5f9e4ebc4fc6d257249d45
+SHA256: e4472920063474d0807d2e8f283c7676314bb358ceb19c2a64d00b6287b42a73
 Section: libdevel
 Priority: optional
 Description: RDK Breakpad wrapper library - development files
@@ -156,12 +156,12 @@ Version: 1.3.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 4036
-Depends: libsafec,libtrower-base64,rbus
+Depends: libc6 (>= 2.38),libsafec (>= 3.7.1),libssl3t64 (>= 3.0.0),libtrower-base64 (>= 1.2.7),rbus (>= 2.9.0)
 Filename: pool/main/l/libccsp-common/libccsp-common_1.3.0_amd64.deb
-Size: 895082
-MD5sum: 718014dca450a6cbfca771a3913fba1b
-SHA1: cedc223cd0af3bc644d5bf56ec44ed36ec5737ab
-SHA256: 0e38d5fff2a6a252c1dcc4b640f8b4fe45e587598185d39ba2ef5ea7a01983b6
+Size: 895000
+MD5sum: f3c2b3437e5eb744c9eebd6fdf34b558
+SHA1: c79fb9926ab642351d479fa20504391d5bccedc3
+SHA256: 3de3ea4288eba1cd680a90349c303606ea686e1edcd86bfead45f78a4fb95bbf
 Section: misc
 Priority: optional
 Description: CCSP Common Library
@@ -178,10 +178,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 9040
 Depends: libccsp-common (= 1.3.0)
 Filename: pool/main/l/libccsp-common-dev/libccsp-common-dev_1.3.0_amd64.deb
-Size: 518456
-MD5sum: 89911e6c541f9232aba03e21eabb91e6
-SHA1: f6f8049b07af6cb3e6036df0d406c87324567534
-SHA256: 4db8f06fb5ff14db442fe7f0db11ff94a03bea74fe4ddbfdbe88b94d035465f8
+Size: 518586
+MD5sum: 4f74bcb810401bfbeeb5432ff47b7dc0
+SHA1: 4bdc83609dad5b0277f215b0ec268fd2fae43ee0
+SHA256: 9031f789e0c64162033a7392b53bf80e1be72c74aa9c96394920ba9be3e578d5
 Section: libdevel
 Priority: optional
 Description: CCSP Common Library - development files
@@ -194,11 +194,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 24
+Depends: libc6 (>= 2.4),librdk-logger (>= 2.4.0)
 Filename: pool/main/l/libcimplog/libcimplog_1.0.0_amd64.deb
-Size: 4178
-MD5sum: 36b5a8e097e876f586a23adfde979b4d
-SHA1: 2ac3fca69dc2f25ca886756a572577aa75803fb3
-SHA256: 373172666fdbcee31883b2f42e60af0fb1434520e78c9dd482815ada6f941efd
+Size: 4214
+MD5sum: 0ce19c22fc49b92eee1a1ef12cb5727a
+SHA1: 98ab319357211cdffe3816a9a165825d91888ed7
+SHA256: 14f2976bf40077209c6fb6167442021aafd7494128386219bafc912d7ee60e69
 Section: libs
 Priority: optional
 Description: Simple logging library - runtime
@@ -217,9 +218,9 @@ Installed-Size: 16
 Depends: libcimplog (= 1.0.0)
 Filename: pool/main/l/libcimplog-dev/libcimplog-dev_1.0.0_amd64.deb
 Size: 3780
-MD5sum: 7675d06b3b52870218e26065ad9dad00
-SHA1: b4799e54b4c42204a3bdb2c6ee1074d54cde1d60
-SHA256: 4bdbd8d455c5152fcb97a344302dfe0084b088c704048e98899a72026a4212e4
+MD5sum: 27defc70a7ac4902af47c61d51b5f22f
+SHA1: 23423ed1e0788dcb93c7d01406cda19adf6c6385
+SHA256: 6903eede124b16d307afe202e8c36276db0e2cb0b3aba9d2a4df0317740daec1
 Section: libdevel
 Priority: optional
 Description: Simple logging library - development files
@@ -234,12 +235,12 @@ Version: 2.3.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 44
-Depends: libtrower-base64
+Depends: libc6 (>= 2.4),libcjson1 (>= 1.7.5),libssl3t64 (>= 3.0.0),libtrower-base64 (>= 1.2.7)
 Filename: pool/main/l/libcjwt/libcjwt_2.3.0_amd64.deb
-Size: 15072
-MD5sum: fa05bb967370a18fa62bffa647edafce
-SHA1: a7668333eb53de467281620c69073c246972a31f
-SHA256: b95cce842448d8ace0512b26dbee37e953fae260f3256836502ca32c67c055c6
+Size: 15106
+MD5sum: 5f6a318960eb5b75c6ce8b6143ec1ae5
+SHA1: 0aa9fef4160b008cdaf4ef9c443e427b1b64a0d4
+SHA256: 00b9365b81634adbb1c4dea2469fc70c95065fe3ab5bd7f0ace81f4f0bb8fb14
 Section: libs
 Priority: optional
 Description: C JWT implementation - runtime
@@ -260,10 +261,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 48
 Depends: libcjwt (= 2.3.0)
 Filename: pool/main/l/libcjwt-dev/libcjwt-dev_2.3.0_amd64.deb
-Size: 15836
-MD5sum: b0faf082b72400263ac5a4570d15fd70
-SHA1: 4569477bcb642bd4ddcfdb0e12e0f2fa34274851
-SHA256: 074cdf096b3e5bdd4b8cd6d12a8625c3c199fc3e1056d12ba08a9466744b4681
+Size: 15838
+MD5sum: 1e305a1311b08c55e127f2be22a24f0b
+SHA1: 7269f70004ee0580dc0e553284bbefdf073e692c
+SHA256: 3e43f673a39e3c5bb8e44af4f5c4671a53c756d09515897d266136bdfa688015
 Section: libdevel
 Priority: optional
 Description: C JWT implementation - development files
@@ -278,12 +279,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 64
-Depends: libcimplog,rbus
+Depends: libc6 (>= 2.4),libcimplog (>= 1.0.0),rbus (>= 2.9.0)
 Filename: pool/main/l/libcpeabs/libcpeabs_1.0.0_amd64.deb
-Size: 20458
-MD5sum: b18acc6308ca2faf04a67ae8460ae8e0
-SHA1: 3f5e1f6a92492da1755218635142226d1bee8c2f
-SHA256: a8ee1fa1d60bb9619e0afbec5e83a315bd7ec56f4d693e48ff8d99cdba988bb8
+Size: 20482
+MD5sum: 0a4580bb16b6f79a9f35a2d175557192
+SHA1: a8d8a4b777d996f6c71f17ad89b9d565deadad37
+SHA256: 48d4b0c6026e9c1a69adaeae4358dc447a2be20ad93cc47c1452a3f452b85b9c
 Section: misc
 Priority: optional
 Description: Abstraction layer for consumer preference equipment systems
@@ -297,10 +298,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 84
 Depends: libcpeabs (= 1.0.0)
 Filename: pool/main/l/libcpeabs-dev/libcpeabs-dev_1.0.0_amd64.deb
-Size: 21720
-MD5sum: 2dee845444920eab644ca3290b32a0bc
-SHA1: c607218ea873469e8cceb061c6267e5829e267e5
-SHA256: cb60e9842f438e3edc3e1db014a242593d6c949c18c8bcb077502b70a94f263d
+Size: 21714
+MD5sum: b8480a8737ef363af248773d80c29c17
+SHA1: ee9f76022800c512c25a0956519c17fc6378589a
+SHA256: f0d1183c68fba033de6452e8c3d04cc42548713c62f391469cb13e7b8ae26b87
 Section: misc
 Priority: optional
 Description: Development files for cpeabs
@@ -314,10 +315,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 84
 Depends: libc6 (>= 2.7)
 Filename: pool/main/l/liblinenoise/liblinenoise_1.0_amd64.deb
-Size: 29690
-MD5sum: d0fac081d2f2b7da52c1ff9fbd28eb81
-SHA1: 67859d59e63db5296583ac93bbe57806a7e1253e
-SHA256: ca00e685b86e4c5d5b0b8ea1a99acdccb27ef93da9bf253ac96686eb9b0f3a07
+Size: 29694
+MD5sum: f7d998b241f1d3105bbc7d3cca24a11a
+SHA1: 3b54a863ee9e5230a41289d6645241b7a7d894bc
+SHA256: da7a699657ec33cdbd185167341d039a072c800e38241eace7d9bfc29b5ae397
 Section: misc
 Priority: optional
 Description: Minimal line editing library
@@ -332,10 +333,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 304
 Depends: libc6 (>= 2.34)
 Filename: pool/main/l/libnanomsg/libnanomsg_1.2.2_amd64.deb
-Size: 100082
-MD5sum: 81c5ecfc991c620fcf596828cf55848a
-SHA1: 2d106ebd11452aa639a1bf50382c1904e5e75cd2
-SHA256: 8ff8598a01ae489d8e99ce1506edb9e7984068959b27434202b66c0d5a5ef358
+Size: 99482
+MD5sum: 5eddf2f2a19969e86daa201d9b36bf6b
+SHA1: be42fff70da3fb69bcee3e12aebf6123a166c533
+SHA256: 5433a5699fe98dceb5f96755e4e717b226b4eed7996886c87d8981be1fca909a
 Section: libs
 Priority: optional
 Description: High-performance implementation of scalability protocols - runtime
@@ -357,10 +358,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 80
 Depends: libnanomsg (= 1.2.2)
 Filename: pool/main/l/libnanomsg-dev/libnanomsg-dev_1.2.2_amd64.deb
-Size: 8538
-MD5sum: c250d85521d82d266c645d294fe21477
-SHA1: cb8a88d424db9f1867dd73d6ae26e0eab1258ed3
-SHA256: 8e1fabc48a0b3d119d74e82dff19edad3298e5436a78c756da05b16faadfd5a4
+Size: 8548
+MD5sum: 940cb49aa4f2ef04c492cf557199c79e
+SHA1: e2ee59859696fe5cce4dd018c3172d20a6a1a67a
+SHA256: 4e726cdc36050b76630ad15f9a5fa3bc3ec58f74bbfd7c66af26889e209083c5
 Section: libdevel
 Priority: optional
 Description: High-performance implementation of scalability protocols - development
@@ -378,9 +379,9 @@ Installed-Size: 176
 Depends: libc6 (>= 2.34),libssl3t64 (>= 3.0.0)
 Filename: pool/main/l/libnopoll/libnopoll_1.0.4_amd64.deb
 Size: 46056
-MD5sum: 7d91d5550cae3b1f3b86781a66d68add
-SHA1: 3cc1c940205033528ee7dbf9cd5f58ef82bbabba
-SHA256: 8f50cf91ac49c8929556695025499091d86cd0a9e2e9b2bbd6fc097839fdff1a
+MD5sum: 12edaa98e021b9a52bff0a2a0e1f6702
+SHA1: 326000de9f5ade9964b650949987e010a1dbb1b0
+SHA256: ca3757637d9ca587f81b8472a37b3e289af96412dc4b7b5158fb2db818eafadf
 Section: libs
 Priority: optional
 Description: WebSocket library - runtime
@@ -398,10 +399,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 336
 Depends: libnopoll (= 1.0.4)
 Filename: pool/main/l/libnopoll-dev/libnopoll-dev_1.0.4_amd64.deb
-Size: 57322
-MD5sum: 74a5d2be68d8d4a32700ce62391fe00d
-SHA1: 79657e03b991a14be3c364697dc37ee1e3267028
-SHA256: 762efb560a0beb5e3a04e72d0d53c7d3ce3ba7d957e1187dbd9f6543028fa861
+Size: 57302
+MD5sum: 738b395ec7bba160abd4518795ef72f8
+SHA1: d76382606cfd23c64cf1907b0a21fbf613ad1ffe
+SHA256: ab23ff0b301b284142832ee33139e43e2a709400ee63139f2684693fd78a3982
 Section: libdevel
 Priority: optional
 Description: WebSocket library - development files
@@ -417,12 +418,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 32
-Depends: libnanomsg,wrp-c
+Depends: libc6 (>= 2.34),libnanomsg (>= 1.2.2),wrp-c (>= 1.1.3)
 Filename: pool/main/l/libparodus/libparodus_1.0.0_amd64.deb
-Size: 9834
-MD5sum: c73e9d7e6378bf51a529e3c9ec90b6e5
-SHA1: ef17cbfc8d0f7a81387b941c67265948057e6a96
-SHA256: 371c67b64b14acf36220cd89764a6a09cedd0d4c77f46d568546b91be67b87da
+Size: 9860
+MD5sum: 19831f70f07470f0d35c9495bafc6c8d
+SHA1: d0b0d843a17268b533316a6e2e6ef18cbe24576a
+SHA256: 360df0736389319c7f0a5a668479fe1174b5d3ccc559006344680a4b36899f01
 Section: libs
 Priority: optional
 Description: C implementation of the Parodus adapter - runtime
@@ -444,9 +445,9 @@ Installed-Size: 40
 Depends: libparodus (= 1.0.0)
 Filename: pool/main/l/libparodus-dev/libparodus-dev_1.0.0_amd64.deb
 Size: 10212
-MD5sum: 1c86afb5699bc7a7af479d1bd13459ca
-SHA1: 0c72fa8064040cddc2768bb8b6207efb5b779147
-SHA256: 0d5ec519db70852942458e049b785e79ef6d08eba86423ae7ce5e9c0baab3ae1
+MD5sum: 6bbfb0c15671e5b2fa1195c3060a8d55
+SHA1: ca553f52abc735ed0751fd45f7697dd24b583779
+SHA256: 440306e542989340baedc095523bb6dc1c9174222c6e149d568d2c98f786da9d
 Section: libdevel
 Priority: optional
 Description: C implementation of the Parodus adapter - development files
@@ -462,10 +463,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 276
 Depends: rbus (= 2.9.0)
 Filename: pool/main/l/librbus-dev/librbus-dev_2.9.0_amd64.deb
-Size: 36486
-MD5sum: c6645c4f976a9f433a13e250a8638a31
-SHA1: 3dc72ffd0f88cecbaf489d72e25be407e0292e71
-SHA256: a8255c239a44a0ef29d6bd39d7567c7e5e4a7e9a53f3d0b1b7e9bbb5413832cb
+Size: 36470
+MD5sum: 91794fcf7389f72d0b339cf55cca42c8
+SHA1: ac40a6301ed8118b82b917e787e4335bdec93204
+SHA256: eff4dc2fd13cbef5a5d626e42687241df60967f5ab79c50b72175ed76f1cdb19
 Section: libdevel
 Priority: optional
 Description: RDK Bus messaging system - development files
@@ -482,10 +483,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 112
 Depends: libc6 (>= 2.17),libc6 (>= 2.34),liblog4c3t64 (>= 1.2.1)
 Filename: pool/main/l/librdk-logger/librdk-logger_2.4.0_amd64.deb
-Size: 19038
-MD5sum: 50b57064f08716e61246212221f5396d
-SHA1: d16191ab1e13c78aa508a74ae591d57005e837d5
-SHA256: 7077bcf16da50028fefb19898ef2d21acaf6933af1fe4d486f95d5afad0224d2
+Size: 19036
+MD5sum: d7bcfce779498c0d7960f17e788bda17
+SHA1: 5f4360c2104678e379dab0117dad46d96ed3de76
+SHA256: 342bb08a8f22f3c75adc5be69acea8519a0c6a713a12deafbbbdf5c4365c159e
 Section: libs
 Priority: optional
 Description: RDK Logger - Runtime library
@@ -503,10 +504,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 84
 Depends: librdk-logger (= 2.4.0)
 Filename: pool/main/l/librdk-logger-dev/librdk-logger-dev_2.4.0_amd64.deb
-Size: 15592
-MD5sum: d55bc35fe0f508ed640f0265a041ee23
-SHA1: cd5c75ac750de5d5b1d1f72754f5e20865d8680d
-SHA256: f603f0eada1574d95466e99482b102390875000ae9d797ebccff46059159db13
+Size: 15598
+MD5sum: 35171916b17110a075330af5da1afad0
+SHA1: c502913f8e3ae4732a76f1539756e46219806909
+SHA256: 12787060db97f666cb470ced26cbac00c4cb0d940e9405b016f9781b05368e01
 Section: libdevel
 Priority: optional
 Description: RDK Logger - Development files
@@ -521,10 +522,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 168
 Depends: libc6 (>= 2.38)
 Filename: pool/main/l/libsafec/libsafec_3.7.1_amd64.deb
-Size: 36498
-MD5sum: 34b27db4df0b4f11a30340e40325469f
-SHA1: 53d2e47170bed8a2cb1267e5e31758f63cc829cb
-SHA256: 11d223118ac532d5c6f7ad6720ac81b8ca4978dfc14fdd65cb577cf68a60a161
+Size: 36496
+MD5sum: f7be7f34b60614fdb7e558371bfeda17
+SHA1: f7516e1b3e0363019efed527e95ed93611d549f9
+SHA256: f5120ef65d7605b8db06a57775c06fc509f7ccc076f0c99568d0619d0866c972
 Section: misc
 Priority: optional
 Description: Safe C Library
@@ -538,10 +539,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 416
 Depends: libsafec (= 3.7.1)
 Filename: pool/main/l/libsafec-dev/libsafec-dev_3.7.1_amd64.deb
-Size: 45442
-MD5sum: 5ff526e1066e57ede908ab050c854d6b
-SHA1: 3e66fee2f7162ca8a104e3bd644df4d53591fe11
-SHA256: 38768b9ff54f8c09070653aba7c5c64968edec87eca1afa24f065d2bc3a36d6e
+Size: 45438
+MD5sum: 6e15a848be0bd8b81b01d00122e2256d
+SHA1: c410cb812ebc4076b2ce18da6762dcea7de2b00f
+SHA256: 065da79bab3205caa25c8be92f6b25457c30c15372ea843a9a12675933b95c31
 Section: libdevel
 Priority: optional
 Description: Safe C Library - development files
@@ -555,11 +556,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 40
+Depends: libc6 (>= 2.38),librdk-logger (>= 2.4.0)
 Filename: pool/main/l/libsyswrapper/libsyswrapper_1.0.0_amd64.deb
-Size: 9456
-MD5sum: 0598b89e49c82fb9553603978251afda
-SHA1: 403ec2ad2f4833de04b5789e60ed7b2d5508eb74
-SHA256: 357c6075fb1586092b433f96af1abd6f71ac5a1362f26c58a1ebdf55cde82e53
+Size: 9494
+MD5sum: 938c271b0aa8eb6bf8520a607014451c
+SHA1: 6da74619124aca416bc7924c6c77cd7f887d0f00
+SHA256: 8d5463d2cd6ca2a55a6dab60f1c7b4e52e92b8a4760eebd962a45bbf16c43553
 Section: misc
 Priority: optional
 Description: Secure wrapper for system calls
@@ -573,10 +575,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 40
 Depends: libsyswrapper (= 1.0.0)
 Filename: pool/main/l/libsyswrapper-dev/libsyswrapper-dev_1.0.0_amd64.deb
-Size: 9934
-MD5sum: ed2deb2cda2f19aebca0a8784becd516
-SHA1: 8599a9fdd57288e4bc4a19c1d528dd4a983547bc
-SHA256: 0137f238ae1aa1fe14dcb55a4ee83b87104209b20a48ec49037456a172414f86
+Size: 9940
+MD5sum: baac138f922f1c08b9063d18a0401c22
+SHA1: d53fc5c2f3f5bc9db5ff96f77524611a4453bb7b
+SHA256: 6edfff9a44f488e8dba93fac2d5039143579dd3af36ce372f56b80214dc8124a
 Section: misc
 Priority: optional
 Description: Development files for libSyscallWrapper
@@ -589,10 +591,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 44
 Depends: libc6 (>= 2.38)
 Filename: pool/main/l/libtrower-base64/libtrower-base64_1.2.7_amd64.deb
-Size: 13114
-MD5sum: 1e8e7cec3de29510a7fb80b7ac41b589
-SHA1: 2aef8ba7aa17ace3c242c00e5a57c633e12d84f2
-SHA256: d56d8d032e7151785b6c441b765cde2621ad8dc8fe8e7080c1cdc2400144fd1b
+Size: 12978
+MD5sum: cad320c6ae3fdae5233923432639fc9f
+SHA1: 1b5df4e320554d37039eda562a9ab563cf744031
+SHA256: c7cca03ce70238d45624edbc99b3b3cabccb71a728095b07fc5be5aaa5db7ba3
 Section: misc
 Priority: optional
 Description: Base64 encode/decode library
@@ -607,10 +609,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 12
 Depends: libtrower-base64 (= 1.2.7)
 Filename: pool/main/l/libtrower-base64-dev/libtrower-base64-dev_1.2.7_amd64.deb
-Size: 2210
-MD5sum: bdcf93020641417a39c00ba02b8582f6
-SHA1: 9c1eabeae428ed1a731ea46fa3ea300e960e0b4d
-SHA256: b37f03b2018935125e8717d1c28956b27f7542dbd352a945736cb26eedd37a3f
+Size: 2212
+MD5sum: 46fd566c31a705dbf31b630f03f81c77
+SHA1: 0f52e0e1560dfe3e90fddbe94fae8b4402b8a01e
+SHA256: 53622c81698995341c9a404b690682c9e673891c65d8dd614e877e77cde50a45
 Section: libdevel
 Priority: optional
 Description: Base64 encode/decode library - development files
@@ -625,10 +627,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 844
 Depends: libc6 (>= 2.33),libc6 (>= 2.34),libc6 (>= 2.4),libjson-c5 (>= 0.15)
 Filename: pool/main/l/libubox/libubox_1.0.0_amd64.deb
-Size: 255400
-MD5sum: 562bf1862797493ce2c5c8d7c22953cc
-SHA1: b28367f41a2a78d93f12edafe77850f14d8cdf0d
-SHA256: 00aa46046560526fda5872ae26c095f625ec00f16fb87bf1ebc311a2937b7432
+Size: 255416
+MD5sum: 9d98f54682f172d6338f3afb48d5167f
+SHA1: b18b3181acbd2608b07462b7ec86714c21200ac9
+SHA256: 68e8cb9eabca5ae3b5935fb3e1ba5e3992b2f3f34439afcbf1c1f4e8e321e70e
 Section: libs
 Priority: optional
 Description: OpenWrt utility library
@@ -647,10 +649,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 3304
 Depends: libubox (= 1.0.0)
 Filename: pool/main/l/libubox-dev/libubox-dev_1.0.0_amd64.deb
-Size: 437610
-MD5sum: bc2077f9fd1034104627671b7d081c61
-SHA1: fa26a2594e1f58fd41ede16d5353c4f3dc4e0ee7
-SHA256: 727eabe1cecdbfea34fac4e496815b73c76e26183d2df9ffd9af94f3b5468983
+Size: 436400
+MD5sum: 1d0ed838373ae011c0d781ce104b9acf
+SHA1: efd3dde4367fd80af6441ce27c881a3d292c88da
+SHA256: aae968b638146a49a85555cf33fcbda986dd04fb18906e548f3ea0176883d227
 Section: libdevel
 Priority: optional
 Description: Development files for libubox
@@ -669,10 +671,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 24
 Depends: ubus (= 1.0.0)
 Filename: pool/main/l/libubus-dev/libubus-dev_1.0.0_amd64.deb
-Size: 4634
-MD5sum: 68bf5a05621797393b08d304b5d3cf55
-SHA1: 707c5d416153ac8556f6dcff980ef3fc844ea2c6
-SHA256: f03bfba1fb21e769c4eb6171d797a5457ca1c74662657a665b6491c924b69982
+Size: 4632
+MD5sum: 5267055774d1fb026860fa8d3430ac82
+SHA1: 48af289d10d32bc8ba6ca588ab3ef8aa965a009d
+SHA256: 2283c606bc20ebf02f03f967db2b684c3e346c2a66075c70115ee104ec1f935a
 Section: libs
 Priority: optional
 Description: OpenWrt RPC client library
@@ -690,9 +692,9 @@ Installed-Size: 40
 Depends: uci (= 2025.01.05)
 Filename: pool/main/l/libuci-dev/libuci-dev_2025.01.05_amd64.deb
 Size: 8056
-MD5sum: 65a9ad677e0b0a58baeab141fd77ecb0
-SHA1: e26a2e052d5b40d0bbd9da7362b44bf673cd9822
-SHA256: aa12faa660b34689cd85cee459c5882dbc7358905ccebf25fe76289cba7c1ed9
+MD5sum: 506c54f77176753b5a0faec4b9bacf7e
+SHA1: 7ee0b29e83f5074019315354d6aabed2f39ffd40
+SHA256: 5e8a97ca38cdb00dc5fbf7b507f664a362903dff417b726a6e6ada512e8f88ff
 Section: libdevel
 Priority: optional
 Description: OpenWrt Unified Configuration Interface - development files
@@ -706,12 +708,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 44
-Depends: libcimplog
+Depends: libc6 (>= 2.4),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5)
 Filename: pool/main/l/libwdmp-c/libwdmp-c_1.0.0_amd64.deb
-Size: 10926
-MD5sum: c2eae9aede61aa5f7d675d153b55b677
-SHA1: d5d8761f2b7b85bc3380c973b9b8ae2472b18e27
-SHA256: 4e3e60617fa8abcceeaaea7070902a38e98e4b1c0329b759b24d6971cfb9af6e
+Size: 10956
+MD5sum: fb1576be8d53db065a5219c25dacc42b
+SHA1: ceb325f8aa9d706fd49300a4be512dc6aa154f60
+SHA256: 8817b2ff005e1cfb130c6026ca75e69ace604b4177cb5c936a417bce6a753c6f
 Section: misc
 Priority: optional
 Description: WebPA Data Model Parser library
@@ -725,10 +727,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 60
 Depends: libwdmp-c (= 1.0.0)
 Filename: pool/main/l/libwdmp-c-dev/libwdmp-c-dev_1.0.0_amd64.deb
-Size: 12790
-MD5sum: a36e1c47ed76d22bdb69504d454b08b7
-SHA1: ffe66d50c887743b0ab0c43e76f378ea32c25a03
-SHA256: 2023f4506c3ff049217fd10050b4f3330e3c58e1fa2b4b72ac56d6dc72bcb4f9
+Size: 12788
+MD5sum: 191b8f430ef818437a080af32b2698b3
+SHA1: 1e2392f013dd0a504a481bc3d35ea4e657134096
+SHA256: 4f54d130d2ab92e51d90f952a510668c248505a3d52ed46e62de0b9872f51c07
 Section: misc
 Priority: optional
 Description: Development files for wdmp-c
@@ -740,12 +742,12 @@ Version: 1.1.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 180
-Depends: libccsp-common,rbus
+Depends: libc6 (>= 2.34),libccsp-common (>= 1.3.0),rbus (>= 2.9.0)
 Filename: pool/main/l/libwebconfig-framework/libwebconfig-framework_1.1.0_amd64.deb
-Size: 41010
-MD5sum: 0b2db84dc7a00c80b37e7fa8da929a05
-SHA1: 95b4178f7a5bcdcbf27343d02d6a939316ca2a79
-SHA256: 11d941abfb7dce9ec42e0fdaef722280db49f3880f4bd82e991db7c794809ba2
+Size: 41168
+MD5sum: dfb436a740ba3ca5ff2fa2f267fb9e7d
+SHA1: ac4b936444d5da875fe609db090c542c04da5539
+SHA256: da5863b0f81452477130b8f3ffe5da98ffa66423a0fc4f9e45b5592173b50ea0
 Section: misc
 Priority: optional
 Description: WebConfig framework library for RDK components
@@ -759,10 +761,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 328
 Depends: libwebconfig-framework (= 1.1.0)
 Filename: pool/main/l/libwebconfig-framework-dev/libwebconfig-framework-dev_1.1.0_amd64.deb
-Size: 41698
-MD5sum: 15acdb4f1364b1c2e45f55e33fec3249
-SHA1: bfd7d732007998e866f7067ce0ed12e77fe4a811
-SHA256: 0f8ef637f32285094c4790cafaf4ac9300b16b44ece50029eee68d0a3fa081c7
+Size: 41696
+MD5sum: 87c7ac3b316d4f1b3cff1283ce24d2d6
+SHA1: ddd3ce1574fb7832938fd6d748390a477fb7a996
+SHA256: 0a55c79c08cd77ff9f99eb9fa20977c49e642212ea1a98cd69b5c46b1b78c6c9
 Section: misc
 Priority: optional
 Description: Development files for WebConfig framework
@@ -773,12 +775,12 @@ Version: 2.10.1
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 164
-Depends: libcimplog,libcjwt,libnanomsg,libnopoll,rbus,wrp-c
+Depends: libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libcjwt (>= 2.3.0),libcurl4t64 (>= 7.16.2),libnanomsg (>= 1.2.2),libnopoll (>= 1.0.4),librdk-logger (>= 2.4.0),libuuid1 (>= 2.16),rbus (>= 2.9.0),wrp-c (>= 1.1.3)
 Filename: pool/main/p/parodus/parodus_2.10.1_amd64.deb
-Size: 59808
-MD5sum: 6e1b5e09f6f7aca4d3a9fa170fdde2a0
-SHA1: b0e3f682c92e88e8e2aab15edb37f8a00545b56a
-SHA256: 1c6847925d0ee0f5320fbf6b9216523e15c5ec0b6fb640e1ad41928817362b58
+Size: 59878
+MD5sum: 17fef5e7e996d76fccbad8f5cc9fa6b6
+SHA1: e2128b3bc841d9ede0ee66b0b4949f9a4e1c44f8
+SHA256: 94b08ca17a71867b2b115ec9de0c05ae59b6942a9543486426fe937c491c9446
 Section: misc
 Priority: optional
 Description: XMiDT client coordinator
@@ -796,12 +798,12 @@ Version: 1.0.1
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 112
-Depends: libparodus (>= 1.0.0), libcimplog,libparodus,rbus,wrp-c
+Depends: libparodus (>= 1.0.0), libc6 (>= 2.34),libcimplog (>= 1.0.0),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),libssl3t64 (>= 3.0.0),libuuid1 (>= 2.16),rbus (>= 2.9.0),wrp-c (>= 1.1.3)
 Filename: pool/main/p/parodus2rbus/parodus2rbus_1.0.1_amd64.deb
-Size: 42436
-MD5sum: 665f4455855f8211059cd3dcc3a58b1b
-SHA1: 87eeb845d5876b68b49f7c68f9107ac8b4d2a07c
-SHA256: 46d73e721bdcdd31eb88c4f86fb5880517680eb3590ba0c1d28a0185139718b3
+Size: 42490
+MD5sum: 9bfc8bc39edd8f083ccb90a04654316f
+SHA1: f7a51c3f0233aa0e91d58fb311ba40b67c709bb2
+SHA256: bd03eecb8da64bf2a1b9814409a90200f55d2e9e98e5bedac70fe72b22bcad19
 Section: misc
 Priority: optional
 Description: Lightweight bridge translating Parodus-style JSON requests to RBUS
@@ -819,12 +821,12 @@ Version: 2.9.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 656
-Depends: libc6 (>= 2.34),libc6 (>= 2.38),libcjson1 (>= 1.7.5),libmsgpackc2 (>= 2.1.0)
+Depends: libc6 (>= 2.34),libc6 (>= 2.38),libcjson1 (>= 1.7.5),liblinenoise (>= 1.0),libmsgpackc2 (>= 2.1.0)
 Filename: pool/main/r/rbus/rbus_2.9.0_amd64.deb
-Size: 192660
-MD5sum: e78470beabc3108056ee22712a09e36d
-SHA1: c1fb72f0caafd82755e815a93bb57a14ddc2ec4f
-SHA256: b63a5b17ef9c132e743f75f350052923154d2149ade572b30125b4b72b7b6c7a
+Size: 192680
+MD5sum: e5bd55f83386a91772a32144a8595084
+SHA1: 25f8d122f1818d55bfed3a2ad54773d7d67fd7b0
+SHA256: 47d20830e8030311a95d0ec6dafec2366bd8469285a40f0563bb787f2e905779
 Section: libs
 Priority: optional
 Description: RDK Bus messaging system - runtime
@@ -841,12 +843,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 596
-Depends: rbus
+Depends: libc6 (>= 2.34),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),rbus (>= 2.9.0)
 Filename: pool/main/r/rbus-elements/rbus-elements_1.0.0_amd64.deb
-Size: 38700
-MD5sum: ae4608796bdaee1a891296845a2d93f2
-SHA1: 655d745359515a545548a20934d01eb0cb6fac4a
-SHA256: d2087b83dfcd3cf9625d3ca5ea0c1f241e7ba100631b971110e83c51190a2096
+Size: 38756
+MD5sum: 92f4f6fb69909ba068dc10808e97f597
+SHA1: 0a951e20321fdab8f7320a90c1536fbb941976e0
+SHA256: a460e52f1212eefd2e0c6b0ddffe52792da08b955044d02f985f8df167c66d91
 Section: misc
 Priority: optional
 Description: RBus Elements Provider
@@ -862,10 +864,10 @@ Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 8
 Filename: pool/main/s/safec-common-wrapper/safec-common-wrapper_1.0_amd64.deb
-Size: 2286
-MD5sum: c9aacd8bb1967eb1cb9ad271c28839cf
-SHA1: 516def00f4cffd121d6b464edfc53e1128ef5adf
-SHA256: 8f473c2cd4d090c8baa7fc30e8674f60a2f20d77abe05fc03f13764db30519fe
+Size: 2282
+MD5sum: 7d58e89822eeee93b0ad7e464723e12a
+SHA1: 78e1badbffb79f8581331e77076d98d3a7150146
+SHA256: f4efe53ca20624f6400f81d52b35048e2b00e4ef15cfa56295344b460a162c1e
 Section: misc
 Priority: optional
 Description: SafeC wrapper definition header
@@ -880,12 +882,12 @@ Version: 1.7.3
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 1304
-Depends: psmisc, libc6 (>= 2.34),libc6 (>= 2.4),libcjson1 (>= 1.7.5),libcurl4t64 (>= 7.16.2),libcurl4t64 (>= 7.63.0)
+Depends: psmisc, libc6 (>= 2.34),libc6 (>= 2.4),libcjson1 (>= 1.7.5),libcurl4t64 (>= 7.16.2),libcurl4t64 (>= 7.63.0),libglib2.0-0t64 (>= 2.12.0),libmsgpackc2 (>= 2.1.0),librdk-logger (>= 2.4.0),libwebconfig-framework (>= 1.1.0),rbus (>= 2.9.0)
 Filename: pool/main/t/telemetry/telemetry_1.7.3_amd64.deb
-Size: 386322
-MD5sum: e581d2840ce0a644a784a5c6b2dd11bd
-SHA1: 3a0842a9d37d711eb908f04abc2c4f7372d8470f
-SHA256: b8ad0f0dcd43160132f0f06833a6dafac8137ec76b1829c795851accf71e6092
+Size: 386340
+MD5sum: e1a9b3cc283be6d3bf2680ce1d413ac8
+SHA1: bb19cd4795b25f99c642d7169ea99f9eb39b50cc
+SHA256: f6b3a7ab9f6bf6f8ea0bf715b4dd63c72201497d4f5d84ffc3fb69d3dab0cec5
 Section: misc
 Priority: optional
 Description: RDK Telemetry 2.0 framework
@@ -899,10 +901,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 312
 Depends: telemetry (= 1.7.3)
 Filename: pool/main/t/telemetry-dev/telemetry-dev_1.7.3_amd64.deb
-Size: 67920
-MD5sum: 362257fba314a533bddbb234469db747
-SHA1: 4af997613bc9c97c0bb89f9ae1eaf59dcf89d516
-SHA256: 6dcad4b276785a712dc34a0a7a3e88d365ce7f79f374e491d6e184ab34ff3cfe
+Size: 67906
+MD5sum: 75453b16a804d94adef2308792e00d94
+SHA1: d08e16c877bc5aeb5cf88f2ce214328a9950264d
+SHA256: a5c9debc4684cb10242a10befe47ae56599c5ce2fb7eaf4af6404ecfef489265
 Section: misc
 Priority: optional
 Description: Development files for Telemetry 2.0
@@ -913,12 +915,12 @@ Version: 1.0.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 720
-Depends: libubox,ubus
+Depends: libc6 (>= 2.17),libc6 (>= 2.34),libc6 (>= 2.38),libubox (>= 1.0.0)
 Filename: pool/main/u/ubus/ubus_1.0.0_amd64.deb
-Size: 223940
-MD5sum: b1a0eb6698820a079dc23828fa7a6dba
-SHA1: df9b36fc4e01d1cc6d429438b9c002d5d915fb59
-SHA256: d925beaf2512fef5f808f66ad3bf9c92fd2f858875fd7cb5d1e57dc4ee22b4f6
+Size: 223904
+MD5sum: 698e8e018e21287241cf59f04c0979ef
+SHA1: 1448f0a23c91ed54ae00b716ea35fb76adc50570
+SHA256: ae6035f6fa674e427664b0235cf51c5810cc1654b7e77d8c755b69337c1ed782
 Section: misc
 Priority: optional
 Description: OpenWrt RPC daemon and CLI
@@ -933,12 +935,12 @@ Version: 2025.01.05
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 380
-Depends: libc6 (>= 2.34)
+Depends: libc6 (>= 2.34),libc6 (>= 2.38),libubox (>= 1.0.0)
 Filename: pool/main/u/uci/uci_2025.01.05_amd64.deb
-Size: 131264
-MD5sum: f8dc917721992a3669914484b3553f62
-SHA1: de9f40acec6659de1f41d52d079c2a92b744a62f
-SHA256: f7b64397aa9ab90a79c036c0c3cfa34c07322bde4d374291df745a0117aac9a8
+Size: 131270
+MD5sum: 4fd8340b33cfda1a92a51a53ee5974c9
+SHA1: 97eb3965be5761b02ba0fdf06cc9ee2c767ea8f2
+SHA256: 1b0c1d5a269dd1704208842b6afc630967221c9d6f60c34559dbcae29011abec
 Section: utils
 Priority: optional
 Description: OpenWrt Unified Configuration Interface - runtime
@@ -954,12 +956,12 @@ Version: 1.4.0
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 184
-Depends: libc6 (>= 2.34)
+Depends: libc6 (>= 2.14),libc6 (>= 2.34),libc6 (>= 2.4),libc6 (>= 2.7),libccsp-common (>= 1.3.0),libsafec (>= 3.7.1),telemetry (>= 1.7.3)
 Filename: pool/main/u/utopia/utopia_1.4.0_amd64.deb
-Size: 35538
-MD5sum: 7ee5f04ab6b133acf8801fd774d499e5
-SHA1: 0a42545453992ddb5390cbdd4870abed47eb4a0b
-SHA256: 7c1cf90e4caa49b82cbe2ab9e8e0f9010d75b1d9e3d473761c0df1d8191355cc
+Size: 35592
+MD5sum: 502e48b043d22bae568db99d2f77d1ca
+SHA1: f1ccc1f242866a4659fdbd09f66cbed8352be30d
+SHA256: c33159ac4e7b4fddca498344a8d644fbd7dd616170d70e06552ecacf4b59ae8d
 Section: misc
 Priority: optional
 Description: RDK-B Utopia service framework
@@ -974,10 +976,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 24
 Depends: utopia (= 1.4.0)
 Filename: pool/main/u/utopia-dev/utopia-dev_1.4.0_amd64.deb
-Size: 3498
-MD5sum: 1966705c03b19905cc0547f41aaaff71
-SHA1: cc03fe3cb8072fac5ca71db483b5667f201d472d
-SHA256: 8ebbf2660cc5981ec4709d2a5d261abf2470c1ccbc72385e38f5a55f400d1f2a
+Size: 3496
+MD5sum: bb815a0e3bc833eefd4dbbac7a060b1f
+SHA1: 7597e2269524ec24a36442149b8d059114e61c81
+SHA256: 5619a4764d6adabe4190b7a3118f92a7991e708431261fbf6fab2167304eccbd
 Section: libdevel
 Priority: optional
 Description: Development files for Utopia
@@ -988,12 +990,12 @@ Version: 0.0.1
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 628
-Depends: libcpeabs,libtrower-base64,libwdmp-c,rbus,wrp-c
+Depends: libc6 (>= 2.38),libcjson1 (>= 1.7.5),libcpeabs (>= 1.0.0),libcurl4t64 (>= 7.16.2),libmsgpackc2 (>= 2.1.0),libtrower-base64 (>= 1.2.7),libuuid1 (>= 2.16),libwdmp-c (>= 1.0.0),rbus (>= 2.9.0),wrp-c (>= 1.1.3)
 Filename: pool/main/w/webcfg/webcfg_0.0.1_amd64.deb
-Size: 236730
-MD5sum: ed581f05342b3a5864505b5727e4a047
-SHA1: 01bbf2609c16f699efcddfcdb9ad5cca59c058cd
-SHA256: 699c317b029ddfb8849696915254dcfc2dfc1db80ecf7cfc8501fc1733bcfdd5
+Size: 236796
+MD5sum: 75b639e5e60112e32f3bd677ab6a0561
+SHA1: 5db5de6557152937c937dca4d7ca9cd1be1a50d0
+SHA256: 56e8ed4bfd5f02b1d686c1d1899fb6bddf4ed2d00fed260b14023cda8d34e0ea
 Section: misc
 Priority: optional
 Description: Webconfig client implementation
@@ -1005,12 +1007,12 @@ Version: 1.1.3
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 100
-Depends: libcimplog,libtrower-base64
+Depends: libc6 (>= 2.4),libcimplog (>= 1.0.0),libmsgpackc2 (>= 2.1.0),libtrower-base64 (>= 1.2.7)
 Filename: pool/main/w/wrp-c/wrp-c_1.1.3_amd64.deb
-Size: 36918
-MD5sum: cbcd033bbbe701652f020e05623c66e4
-SHA1: 0271451795225bf3398853d695f3e6819f4081f8
-SHA256: 53357f6831d75f4e1e9e7469dfc106c878d51459cd47b96cf454a3541faa0d20
+Size: 36948
+MD5sum: 767cc489539b7b992b47bf9a794760bd
+SHA1: 455c1698eadfed2b3d9328c14bb21a1f7ac83f01
+SHA256: e35d43a3ce9b90d08fdd0b406b3b56c5a2db91ca6d9b3cf17fb6afc98929e944
 Section: libs
 Priority: optional
 Description: C implementation of Web Routing Protocol - runtime
@@ -1031,10 +1033,10 @@ Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 156
 Depends: wrp-c (= 1.1.3)
 Filename: pool/main/w/wrp-c-dev/wrp-c-dev_1.1.3_amd64.deb
-Size: 41716
-MD5sum: 6c93529538df9ee99b74f02cd766abca
-SHA1: ca9d32d63fb86eceeb7982f9c27feb053ac8caa1
-SHA256: 9d2efa3e72a26bd67f6df529c5c01a1b8e9cee62889d136b3ba44e32bb8d5a05
+Size: 41720
+MD5sum: 27fbb5bbcd2b352d8ee387f4273d9439
+SHA1: 5f78e9414fe27ad1f28212ad0ef5c3f28bf1c9bf
+SHA256: 9ac24c85b2492968935a11ff82a66edcb51a4d0428eb5713e0118f8075bb8a32
 Section: libdevel
 Priority: optional
 Description: C implementation of Web Routing Protocol - development files
