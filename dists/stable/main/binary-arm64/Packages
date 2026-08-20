@@ -858,6 +858,26 @@ Description: RBus Elements Provider
  .
  This package contains the rbus_elements binary and configuration.
 
+Package: routerd
+Version: 0.1.0+git20260731.ef5629a
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 27816
+Depends: busybox, libc6 (>= 2.34),libc6 (>= 2.39),libgcc-s1 (>= 4.2)
+Filename: pool/main/r/routerd/routerd_0.1.0+git20260731.ef5629a_arm64.deb
+Size: 7012132
+MD5sum: dd55098ac6183832ec9b1408589d4456
+SHA1: 71184a29ec3f333fca8151a94ce906c383f40bc4
+SHA256: 42d450c03841b08f815405e0dfcd58c1b78270707b768431fb7529e772663fd8
+Section: misc
+Priority: optional
+Description: Declarative broadband router control plane
+ routerd reconciles router configuration with Linux network state and provides
+ routerctl for local control through Unix domain sockets.
+ .
+ The daemon requires Linux network-administration privileges and an udhcpc
+ provider. Supply provisioning files under /etc/routerd before enabling it.
+
 Package: safec-common-wrapper
 Version: 1.0
 Architecture: arm64
