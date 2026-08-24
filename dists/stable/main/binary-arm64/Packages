@@ -897,6 +897,27 @@ Description: SafeC wrapper definition header
  This is a header-only package that provides compatibility macros
  for safe string and memory operations.
 
+Package: sherloq-agent
+Version: 0.1.0+git20260824.b73cb72
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 2320
+Depends: libc6 (>= 2.39),libgcc-s1 (>= 4.2)
+Filename: pool/main/s/sherloq-agent/sherloq-agent_0.1.0+git20260824.b73cb72_arm64.deb
+Size: 866302
+MD5sum: e08192f858e6a0170023ac4b2adfd348
+SHA1: e80fcfb6711b51c63c4d02567543ca4c97743ad8
+SHA256: 6e3ac15c1221bab41aa6d02a890befbc4e2154a57ad1613abe7c83a8e85e2441
+Section: misc
+Priority: optional
+Description: Native on-device telemetry collector
+ sherloq collects telemetry from Linux device interfaces and uploads it
+ according to a YAML collector specification.
+ .
+ This package installs the Xione collector specification at
+ /etc/sherloq/xione.yaml. Review its server configuration before starting
+ sherloq.service.
+
 Package: telemetry
 Version: 1.7.3
 Architecture: arm64
