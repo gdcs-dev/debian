@@ -881,13 +881,13 @@ Package: sherloq-agent
 Version: 0.1.0+git20260824.b73cb72
 Architecture: amd64
 Maintainer: Package Workflows <packages@example.com>
-Installed-Size: 2592
+Installed-Size: 2596
 Depends: libc6 (>= 2.39),libgcc-s1 (>= 4.2)
 Filename: pool/main/s/sherloq-agent/sherloq-agent_0.1.0+git20260824.b73cb72_amd64.deb
-Size: 941706
-MD5sum: 1657a9359aaeac77bcf42559407dd05d
-SHA1: 54b507a6cae3fff6922c78a614feec7f0e7c1890
-SHA256: 475f82c7e2676b64bbbe4c1a9c99ec542f1dd60322ae93df2d477110a65b3552
+Size: 941552
+MD5sum: 7157d7b5be02aa3d8b030a721df57e2f
+SHA1: 6507fb3cbb84ffd3ca4d0fbc7e4e5aeafa460c40
+SHA256: cc405b71baa9de2514862d347a3101d7d48f015328ad1937ab45bc31265e2c3f
 Section: misc
 Priority: optional
 Description: Native on-device telemetry collector
