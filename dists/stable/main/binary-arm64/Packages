@@ -862,13 +862,13 @@ Package: routerd
 Version: 0.1.0+git20260731.ef5629a
 Architecture: arm64
 Maintainer: Package Workflows <packages@example.com>
-Installed-Size: 27816
+Installed-Size: 27820
 Depends: busybox, libc6 (>= 2.34),libc6 (>= 2.39),libgcc-s1 (>= 4.2)
 Filename: pool/main/r/routerd/routerd_0.1.0+git20260731.ef5629a_arm64.deb
-Size: 7012132
-MD5sum: dd55098ac6183832ec9b1408589d4456
-SHA1: 71184a29ec3f333fca8151a94ce906c383f40bc4
-SHA256: 42d450c03841b08f815405e0dfcd58c1b78270707b768431fb7529e772663fd8
+Size: 7003190
+MD5sum: 14b4e5152823d504a7aaf9819ee8e5b4
+SHA1: 92e4dafd689d6bfed58b99383780ca91b2a7ea33
+SHA256: 1d4ee258fa18dcafee456c750ca67b519efcbe8f1f5f4ce81b5aba1730bc61cc
 Section: misc
 Priority: optional
 Description: Declarative broadband router control plane
