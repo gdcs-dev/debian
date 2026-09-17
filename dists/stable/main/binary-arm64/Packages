@@ -839,16 +839,16 @@ Description: RDK Bus messaging system - runtime
  This package contains the runtime libraries and binaries.
 
 Package: rbus-elements
-Version: 1.0.2
+Version: 1.0.3
 Architecture: arm64
 Maintainer: Package Workflows <packages@example.com>
 Installed-Size: 632
 Depends: libc6 (>= 2.34),libcjson1 (>= 1.7.5),libjansson4 (>= 2.14),rbus (>= 2.9.0)
-Filename: pool/main/r/rbus-elements/rbus-elements_1.0.2_arm64.deb
-Size: 47616
-MD5sum: d7231efe5b1893033892a501339be333
-SHA1: 91180b066818e6b0184278882d69e0428fa0cf82
-SHA256: df50c924fe6aa3fa2f55512130fa99e9d17d9933a6b316dc1175837b7817617e
+Filename: pool/main/r/rbus-elements/rbus-elements_1.0.3_arm64.deb
+Size: 47806
+MD5sum: f8f4fb9729e40f3f65232feee5aa5270
+SHA1: 333f635e8684bddad988e971882a63851067014b
+SHA256: 1f8c48aa828d8d7553e7f1479829ff7296f705089c007b107d129c5fb25d6a6e
 Section: misc
 Priority: optional
 Description: RBus Elements Provider
