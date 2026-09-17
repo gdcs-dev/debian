@@ -770,6 +770,22 @@ Priority: optional
 Description: Development files for WebConfig framework
  Development files (headers) for the WebConfig framework library.
 
+Package: otel-relay
+Version: 0.0.1
+Architecture: arm64
+Maintainer: Package Workflows <packages@example.com>
+Installed-Size: 1084
+Depends: libc6 (>= 2.34),libgcc-s1 (>= 4.2)
+Filename: pool/main/o/otel-relay/otel-relay_0.0.1_arm64.deb
+Size: 513936
+MD5sum: f289fc38c652abfe82b6e06df5a3dd6a
+SHA1: a4b074e681226b61308bb882821c65d81f5daac7
+SHA256: 71182ef21e18b1dbe6186cd835090f352afbaaf6c47861163e95a3da88f58062
+Section: misc
+Priority: optional
+Description: OpenTelemetry relay service
+ otel-relay receives and forwards OpenTelemetry telemetry data.
+
 Package: parodus
 Version: 2.10.2
 Architecture: arm64
